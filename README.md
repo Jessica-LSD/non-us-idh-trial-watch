@@ -24,6 +24,10 @@ China-specific safeguards: `AB-218` must not match the unrelated `JAB-21822`. A 
 
 ChiCTR browser verification on 2026-10-26: its unfiltered search page loaded, but the HMPL-306 search and direct AB-218 detail page both showed an explicit HTTP 405 security-block page. ChiCTR remains blocked; an accessible search form does not establish discovery coverage.
 
+## Local public-browser update route
+
+The GitHub-hosted Chrome test on 2026-10-26 could not reach the CDE search form. A daily local-browser check was therefore scheduled in the owner's existing chat for 07:00 America/New_York, using the ordinary public CDE interface that was verified to work. That check requires the owner's computer and app to be available. It publishes validated public snapshots to `data/china-browser.json`. Snapshot pushes trigger tests, feed generation and Pages deployment without re-running the blocked hosted capture. Hosted capture is attempted on schedules and manual workflow dispatches; a failure retains the last verified browser snapshot and its actual observation time. Read the coverage page to distinguish a current local capture from retained data. The local check reports material findings or failures and stays quiet on successful no-change checks.
+
 ## Operation
 
 Daily GitHub Actions target: **06:17 UTC**, plus manual dispatch and code pushes. Scheduled runs can be delayed; GitHub may disable inactive public-repository schedules after 60 days. Watch the timestamp and Actions notifications. No API keys or paid services are required. Enable Pages with **GitHub Actions** as the publishing source. The workflow commits durable observations before deploying the `docs` artifact, so change history survives runner replacement. Concurrent runs are serialized; failed state pushes prevent deployment. Avoid editing the repository during an active check.

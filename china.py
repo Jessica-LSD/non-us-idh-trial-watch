@@ -48,8 +48,13 @@ def load_snapshot():
         return [],dict(source='China CDE / NMPA',status='FAILED — no verified snapshot',detail='Browser collector has not produced data.',checked_at='Never')
     data=json.loads(PATH.read_text(encoding='utf8'))
     records=data.get('records',[])
-    detail=f'{len(records)} directly captured CDE records. Last successful capture: {data.get("last_success","Never")}. '+data.get('detail','')
-    return records,dict(source='China CDE / NMPA',status=data['status'],detail=detail,checked_at=data.get('last_attempt',data.get('last_success','Never')))
+    status=data['status']
+    message=data.get('detail','')
+    if records and ('failed' in status or 'not completed' in status):
+        status='Local browser capture available; hosted automation blocked'
+        message='GitHub-hosted browser checks could not reach the CDE search form. The scheduled local-browser check is the update route. Retained records have their original capture dates; this is not a fresh no-change result.'
+    detail=f'{len(records)} directly captured CDE records. Last successful capture: {data.get("last_success","Never")}. '+message
+    return records,dict(source='China CDE / NMPA',status=status,detail=detail,checked_at=data.get('last_attempt',data.get('last_success','Never')))
 
 
 ROWS_JS="""() => Array.from(document.querySelectorAll('tr')).map(tr => Array.from(tr.children).filter(x => ['TD','TH'].includes(x.tagName)).map(x => x.innerText.trim()))"""
