@@ -19,11 +19,31 @@ def record(identifier='NCT00000001',source='ClinicalTrials.gov'):
 
 class WatchTests(unittest.TestCase):
     def test_aliases(self):
-        for text in ['DS 1001b','AB218','AB-218','SAFUSIDENIB','沙福司替尼']:
+        for text in ['DS 1001b','AB218','AB-218','SAFUSIDENIB','AB-218胶囊']:
             self.assertEqual(watch.assets(text),['safusidenib'])
         for text in ['HMPL 306','HMPL306','ranosidenib']:
             self.assertEqual(watch.assets(text),['HMPL-306'])
         self.assertEqual(watch.assets('ivosidenib HMPL-523'),[])
+        self.assertEqual(watch.assets('JAB-21822 JAB21822'),[])
+
+    def test_preserve_browser_observation_date(self):
+        r=record();r['observed_at']='2026-10-01T00:00:00+00:00'
+        s=watch.update({},[r],STAMP)
+        self.assertEqual(next(iter(s['records'].values()))['checked_at'],r['observed_at'])
+
+    def test_cde_related_trials_not_merged(self):
+        from china import parse_cde
+        def doc(i,protocol,phase):
+            return {'url':'https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=example','rows':[
+                ['登记号',i,'试验状态','进行中'],['相关登记号','CTR20252100'],
+                ['药物名称','HMPL-306片'],['适应症','胶质瘤'],['试验专业题目','HMPL-306 glioma study'],
+                ['试验方案编号',protocol,'方案最新版本号','1'],['试验分类','有效性','试验分期',phase,'设计类型','平行分组']]}
+        a=parse_cde(doc('CTR20263911','2026-306-00CH1','III期'),STAMP)
+        b=parse_cde(doc('CTR20252100','2025-306-00CH1','I期'),STAMP)
+        self.assertEqual(a['phase'],['III期'])
+        self.assertEqual(a['protocol'],'2026-306-00CH1')
+        self.assertEqual(a['ids'],['CTR20263911'])
+        self.assertEqual(len(watch.update({},[a,b],STAMP)['trials']),2)
 
     def test_no_repeat_and_date_noise(self):
         r=record()

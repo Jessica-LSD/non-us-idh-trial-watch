@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parent
 BASE = 'https://jessica-lsd.github.io/non-us-idh-trial-watch/'
 ALIASES = {
-    'safusidenib': ['safusidenib', 'DS-1001', 'DS-1001b', 'DS1001', 'AB-218', 'AB218', 'AB 218', '沙福司替尼'],
+    'safusidenib': ['safusidenib', 'DS-1001', 'DS-1001b', 'DS1001', 'AB-218', 'AB218', 'AB 218'],
     'HMPL-306': ['HMPL-306', 'HMPL306', 'HMPL 306', 'ranosidenib'],
 }
 ID_PATTERN = r'(?i)\b(?:NCT\d{8}|jRCT[a-z]?\d{10}|ChiCTR\d{10}|CTR\d{8}|ISRCTN\d{8}|ACTRN\d{14}|\d{4}-\d{6}-\d{2}(?:-\d{2})?)\b'
@@ -33,9 +33,11 @@ def norm(s):
 
 
 def assets(s):
-    # Normalize punctuation so hyphens, spaces and case variants match.
-    text = norm(s)
-    return sorted(k for k, vals in ALIASES.items() if any(norm(v) in text for v in vals))
+    # Boundaries prevent AB-218 from matching the unrelated drug JAB-21822.
+    def pattern(alias):
+        chunks=re.split(r'[\s-]+',alias)
+        return r'(?<![A-Za-z0-9])'+r'[\s-]*'.join(re.escape(x) for x in chunks)+r'(?![A-Za-z0-9])'
+    return sorted(k for k, vals in ALIASES.items() if any(re.search(pattern(v),s,re.I) for v in vals))
 
 
 def request(url, data=None):
@@ -261,7 +263,7 @@ def update(state, incoming, timestamp):
     state.setdefault('events', [])
     for record in incoming:
         record = copy.deepcopy(record)
-        record['checked_at'] = timestamp
+        record['checked_at'] = record.pop('observed_at',timestamp)
         state['records'][record['source'] + ':' + record['id'].upper()] = record
     previous = state['trials']
     trials = {}
@@ -303,7 +305,7 @@ def description(event):
             if old:
                 changes = {k:{'before':old.get(k),'after':r.get(k)} for k in event['changes'] if old.get(k)!=r.get(k)}
                 parts.append('<p>Changed values:</p><pre>' + html.escape(json.dumps(changes,ensure_ascii=False,indent=2)) + '</pre>')
-    parts.append('<p>Coverage is partial. See <a href="'+BASE+'">registry coverage and check times</a>. China CDE and WHO ICTRP are currently unsupported. jRCT monitoring covers known records only.</p>')
+    parts.append('<p>Coverage is partial. See <a href="'+BASE+'">registry coverage and check times</a>, including the last successful CDE browser capture and any automation failure. WHO ICTRP automation remains unsupported; jRCT monitoring covers known records only.</p>')
     return ''.join(parts)
 
 
@@ -352,6 +354,10 @@ def run():
     state=json.loads(state_path.read_text(encoding='utf8')) if state_path.exists() else {}
     stamp=now()
     incoming, coverage=[],[]
+    from china import load_snapshot
+    china_records,china_coverage=load_snapshot()
+    incoming+=china_records
+    coverage.append(china_coverage)
     try:
         records=ctis()
         incoming+=records
