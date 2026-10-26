@@ -1,0 +1,61 @@
+name: Daily registry watch and RSS deployment
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ['data/**', 'docs/**']
+permissions:
+  contents: read
+concurrency:
+  group: registry-watch
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Test deduplication, change detection and RSS
+        run: python -m unittest -v
+      - name: Check registries and generate feed
+        run: python watch.py
+      - name: Validate generated RSS
+        run: python validate_feed.py docs/feed.xml
+      - name: Preserve durable history
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data docs
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update registry observations and RSS'
+            git push
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy RSS to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify public feed
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          curl --fail --retry 5 --retry-delay 10 "${PAGE_URL}feed.xml" -o live-feed.xml
+          python -c "import xml.etree.ElementTree as E; r=E.parse('live-feed.xml').getroot(); assert r.tag=='rss' and r.find('channel') is not None"
