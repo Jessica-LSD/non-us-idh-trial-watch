@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:
       contents: write
@@ -25,9 +25,7 @@ jobs:
       - name: Test deduplication, change detection and RSS
         run: python -m unittest -v
       - name: Install standard browser collector
-        run: |
-          python -m pip install playwright==1.56.0
-          python -m playwright install --with-deps --no-shell chromium
+        run: python -m pip install playwright==1.64.1
       - name: Capture China CDE listings and trial details
         id: china
         continue-on-error: true
