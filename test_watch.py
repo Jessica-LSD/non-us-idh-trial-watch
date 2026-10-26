@@ -102,5 +102,15 @@ class WatchTests(unittest.TestCase):
         rows=watch.Tables('<!--<tr><td>fake</td></tr>--><table><tr><th>Phase</th><td>2<script>bad</script></td></tr></table>').rows
         self.assertEqual(rows,[['Phase','2']])
 
+    def test_ctis_search_schema_and_pagination(self):
+        import json
+        with patch('watch.request',side_effect=[
+            json.dumps({'data':[{'ctNumber':'one'}],'pagination':{'nextPage':True,'totalRecords':2}}),
+            json.dumps({'data':[{'ctNumber':'two'}],'pagination':{'nextPage':False,'totalRecords':2}})]) as mock:
+            self.assertEqual(len(watch.ctis_search('HMPL-306')),2)
+            self.assertEqual(mock.call_args.args[1]['pagination']['page'],2)
+        with patch('watch.request',return_value='{}'):
+            with self.assertRaises(ValueError): watch.ctis_search('HMPL-306')
+
 if __name__=='__main__':
     unittest.main()

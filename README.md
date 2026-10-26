@@ -14,7 +14,7 @@ This is not comprehensive surveillance of all non-US registries. Priority source
 * Japan jRCT: direct monitoring of two verified known safusidenib records (jRCT2080225243 and jRCT2071240033). Free-word searches returned unrelated records during verification, so automated new-trial discovery is **unsupported**, not reported as a successful search. jRCT2071220111, found on a sponsor index, failed asset verification and was excluded rather than treated as a safusidenib trial.
 * China ChiCTR: one known AB-218 record, distinct from China CDE. Detail parsing is validated on each run; a missing identifier/asset/title/indication/phase is a failure. Discovery unsupported.
 * China CDE/NMPA: tested search endpoint returned HTTP 202 JavaScript challenge. Unsupported.
-* EU CTIS: tested public search API returned HTTP 403. Unsupported.
+* EU CTIS: verified POST search (`/ctis-public-api/search`) with each asset alias separately, pagination and GET details (`/retrieve/{ctNumber}`). Initial GET search was blocked, but the correct POST method succeeded. Two HMPL-306 trials returned in positive-control testing; a nonsense term returned no trials. Public portal API is undocumented and can change. Full document contents are not monitored; results availability and structured metadata are monitored. Public registry trial links use the EUCT query parameter.
 * WHO ICTRP: official portal states crawling service unavailable. No automated integration; manual XML export is not a daily monitor.
 * ANZCTR: HTTP 403 in testing. ISRCTN: JavaScript/cookie interstitial. Other national registries: not independently implemented or verified. See coverage page.
 

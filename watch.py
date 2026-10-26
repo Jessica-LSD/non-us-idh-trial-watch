@@ -178,6 +178,56 @@ def national_record(source, identifier, url, kind):
         results=field(rows, r'Summary Results'), url=url)
 
 
+def ctis_search(term):
+    records, page = [], 1
+    while True:
+        response = json.loads(request('https://euclinicaltrials.eu/ctis-public-api/search', {
+            'searchCriteria': {'containAll': term}, 'pagination': {'page': page, 'size': 100}}))
+        if not isinstance(response.get('data'), list) or 'pagination' not in response:
+            raise ValueError('CTIS search schema changed')
+        records += response['data']
+        if not response['pagination'].get('nextPage'):
+            if len(records) != response['pagination']['totalRecords']:
+                raise ValueError('CTIS pagination count mismatch')
+            return records
+        page += 1
+        if page > 1000:
+            raise ValueError('CTIS pagination exceeded guard')
+
+
+def ctis():
+    found = {}
+    # Search separately: do not assume undocumented Boolean syntax or synonym expansion.
+    for term in sorted(set(a for vals in ALIASES.values() for a in vals)):
+        for hit in ctis_search(term):
+            found[hit['ctNumber']] = hit
+    records = []
+    for identifier, hit in sorted(found.items()):
+        d = json.loads(request('https://euclinicaltrials.eu/ctis-public-api/retrieve/'+identifier))
+        if d.get('ctNumber') != identifier:
+            raise ValueError('CTIS detail identifier mismatch')
+        p = d['authorizedApplication']['authorizedPartI']
+        identifiers = p['trialDetails']['clinicalTrialIdentifiers']
+        title = identifiers['publicTitle']
+        matched = assets(title + json.dumps(p.get('products', []),ensure_ascii=False))
+        if not matched:
+            continue  # Reject broad search hits with no asset evidence in title/products.
+        countries = sorted(set(x.rsplit(':',1)[0] for x in hit.get('trialCountries', [])))
+        if not countries or not any(c != 'United States' for c in countries):
+            continue
+        info = p['trialDetails']['trialInformation']
+        records.append(dict(source='EU CTIS',id=identifier,ids=ids(json.dumps(identifiers))+[identifier],
+            assets=matched,protocol=identifiers.get('sponsorProtocolCode') or (identifiers.get('shortTitle','') if re.fullmatch(r'[A-Za-z0-9]+(?:[-_][A-Za-z0-9]+){2,}',identifiers.get('shortTitle','')) else ''),title=title,
+            indications=[hit['conditions']],phase=[hit['trialPhase']],status=d['ctStatus'],
+            enrollment={'reported':hit.get('totalNumberEnrolled','')},countries=countries,
+            start=d.get('startDateEU',''),completion=d.get('endDateEU',''),primary_completion='',
+            registered='',posted=d.get('publishDate',''),updated=hit.get('lastPublicationUpdate',''),
+            outcomes={'primary':hit.get('primaryEndPoint',''),'other':hit.get('endPoint','')},
+            eligibility=info.get('populationOfTrialSubjects',{}),interventions=p.get('products',[]),
+            results=bool(d.get('results')),url='https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT='+identifier))
+    return records
+
+
 def fingerprint(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 
@@ -253,7 +303,7 @@ def description(event):
             if old:
                 changes = {k:{'before':old.get(k),'after':r.get(k)} for k in event['changes'] if old.get(k)!=r.get(k)}
                 parts.append('<p>Changed values:</p><pre>' + html.escape(json.dumps(changes,ensure_ascii=False,indent=2)) + '</pre>')
-    parts.append('<p>Coverage is partial. See <a href="'+BASE+'">registry coverage and check times</a>. China CDE, EU CTIS and WHO ICTRP are currently unsupported. jRCT monitoring covers known records only.</p>')
+    parts.append('<p>Coverage is partial. See <a href="'+BASE+'">registry coverage and check times</a>. China CDE and WHO ICTRP are currently unsupported. jRCT monitoring covers known records only.</p>')
     return ''.join(parts)
 
 
@@ -302,6 +352,12 @@ def run():
     state=json.loads(state_path.read_text(encoding='utf8')) if state_path.exists() else {}
     stamp=now()
     incoming, coverage=[],[]
+    try:
+        records=ctis()
+        incoming+=records
+        coverage.append(dict(source='EU CTIS',status='verified: discovery + details',detail=f'{len(records)} matching trials. POST search with separate aliases and pagination, GET details. Undocumented public-portal API; schema validated each run. Results availability monitored; full document contents not monitored.',checked_at=stamp))
+    except Exception as e:
+        coverage.append(dict(source='EU CTIS',status='FAILED',detail=str(e),checked_at=stamp))
     try:
         records=ctgov()
         incoming+=records
