@@ -1,31 +1,31 @@
 [
   {
+    "source": "EU CTIS",
+    "status": "verified: discovery + details",
+    "detail": "2 matching trials. POST search with separate aliases and pagination, GET details. Undocumented public-portal API; schema validated each run. Results availability monitored; full document contents not monitored.",
+    "checked_at": "2026-10-26T14:27:19+00:00"
+  },
+  {
     "source": "ClinicalTrials.gov",
     "status": "verified: discovery + details",
     "detail": "12 matching studies with explicit non-US sites; API v2, all pages checked",
-    "checked_at": "2026-10-26T14:23:37+00:00"
+    "checked_at": "2026-10-26T14:27:19+00:00"
   },
   {
     "source": "Japan jRCT",
     "status": "verified: known records only",
     "detail": "2/2 known records read. New-trial discovery unsupported. ",
-    "checked_at": "2026-10-26T14:23:37+00:00"
+    "checked_at": "2026-10-26T14:27:19+00:00"
   },
   {
     "source": "China ChiCTR",
     "status": "DEGRADED / FAILED",
     "detail": "0/1 known records read. New-trial discovery unsupported. HTTP Error 405: Not Allowed",
-    "checked_at": "2026-10-26T14:23:37+00:00"
+    "checked_at": "2026-10-26T14:27:19+00:00"
   },
   {
     "source": "China CDE / NMPA",
     "detail": "Priority source. Tested 2026-10-26: search endpoint returned HTTP 202 JavaScript challenge rather than trial results. No verified automated search/detail integration. https://www.chinadrugtrials.org.cn/",
-    "checked_at": "2026-10-26 verification attempt; not checked daily",
-    "status": "UNSUPPORTED — not monitored"
-  },
-  {
-    "source": "EU CTIS",
-    "detail": "Priority source. Tested 2026-10-26: public API search request blocked with HTTP 403. No verified search or detail integration. https://euclinicaltrials.eu/",
     "checked_at": "2026-10-26 verification attempt; not checked daily",
     "status": "UNSUPPORTED — not monitored"
   },

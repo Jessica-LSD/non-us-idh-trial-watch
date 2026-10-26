@@ -1,19 +1,25 @@
 {
   "coverage": [
     {
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
+      "detail": "2 matching trials. POST search with separate aliases and pagination, GET details. Undocumented public-portal API; schema validated each run. Results availability monitored; full document contents not monitored.",
+      "source": "EU CTIS",
+      "status": "verified: discovery + details"
+    },
+    {
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "detail": "12 matching studies with explicit non-US sites; API v2, all pages checked",
       "source": "ClinicalTrials.gov",
       "status": "verified: discovery + details"
     },
     {
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "detail": "2/2 known records read. New-trial discovery unsupported. ",
       "source": "Japan jRCT",
       "status": "verified: known records only"
     },
     {
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "detail": "0/1 known records read. New-trial discovery unsupported. HTTP Error 405: Not Allowed",
       "source": "China ChiCTR",
       "status": "DEGRADED / FAILED"
@@ -22,12 +28,6 @@
       "checked_at": "2026-10-26 verification attempt; not checked daily",
       "detail": "Priority source. Tested 2026-10-26: search endpoint returned HTTP 202 JavaScript challenge rather than trial results. No verified automated search/detail integration. https://www.chinadrugtrials.org.cn/",
       "source": "China CDE / NMPA",
-      "status": "UNSUPPORTED — not monitored"
-    },
-    {
-      "checked_at": "2026-10-26 verification attempt; not checked daily",
-      "detail": "Priority source. Tested 2026-10-26: public API search request blocked with HTTP 403. No verified search or detail integration. https://euclinicaltrials.eu/",
-      "source": "EU CTIS",
       "status": "UNSUPPORTED — not monitored"
     },
     {
@@ -2068,6 +2068,695 @@
           "url": "https://clinicaltrials.gov/study/NCT04458272"
         }
       ]
+    },
+    {
+      "before": {
+        "ClinicalTrials.gov:NCT04764474": {
+          "completion": "2025-01-15",
+          "countries": [
+            "Spain",
+            "United States"
+          ],
+          "eligibility": {
+            "eligibilityCriteria": "Key Inclusion Criteria:\n\nSubjects may be enrolled in this study only if they satisfy all the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects aged ≥18 years.\n* ECOG performance status ≤ 2\n* Subjects with advanced relapsed, refractory, or resistant hematological malignancies, as defined below:\n\nPart 1:\n\n* Subjects with documented IDH mutation per local or institutional next generation sequence (NGS).\n* Subjects must be refractory to or intolerant of established therapies.\n* Subjects who have received prior IDH inhibitor treatment may be enrolled in the escalation phase.\n\nPart 2:\n\n* Subjects with documented IDH mutation of any of these subsets: IDH1 (R132C), IDH1 (R132H), IDH (R140Q), and IDH2 (R172K), including co-mutations and any combination thereof per local and institutional NGS.\n* Patients must have received at least 1 prior line of therapy with an IDH inhibitor. An established standard of care with proven benefit for which the patient is eligible, must not be available at the time of enrollment.\n* Patients with AML must not have standard therapeutic options available (including IDH inhibitors where approved) and have the following:\n\n  * i. Relapsed AML unsuitable for intensive chemotherapy or venetoclax-based regimen or target agents;\n  * ii. Primary refractory AML unsuitable for intensive chemotherapy or venetoclax-based regimen or target agents.\n  * iii. Relapsed/refractory AML that has progressed on prior IDH treatment\n\nKey Exclusion Criteria:\n\nSubjects are not eligible for enrollment into this study if they meet any of the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects who received an investigational agent \\<14 days prior to their first day of study drug administration.\n* Subjects who are pregnant or breastfeeding.\n* Subjects with an active severe infection, some treated infections and with an expected or with an unexplained fever \\>38.3°C during screening visits or on their first day of study drug administration.\n* Subjects with some current or prior heart conditions.\n* Subjects taking medications that are known to prolong the QT interval may not be eligible.\n* Subjects with immediately life-threatening, severe complications of leukemia such as uncontrolled bleeding, pneumonia with hypoxia or shock, and/or disseminated intravascular coagulation.\n* Some subjects with some current or prior gastrointestinal or liver diseases.\n* Subjects with inadequate organ function as defined by the protocol.\n* Subjects with a medical condition, physical examination finding, or clinical laboratory finding that, in the Investigators opinion, contraindicates the use of an investigational drug or that may affect the interpretation of the results or renders the subject at high risk from treatment complications.\n* Subjects with a known hypersensitivity to HMPL-306 or to any of its excipients.\n* Subjects with presence of second primary malignant tumors within the last 2 years, with the exception of the following, if medically controlled: basal cell carcinoma of the skin, squamous cell carcinoma of the skin, carcinoma in situ of the cervix, and carcinoma in situ of the breast.\n* Part 2 Only: The time since the last dose of prior IDH inhibitor treatment is within 30 days prior to the first day of study drug administration",
+            "healthyVolunteers": false,
+            "minimumAge": "18 Years",
+            "sex": "ALL",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "enrollment": {
+            "count": 46,
+            "type": "ACTUAL"
+          },
+          "indications": [
+            "Isocitrate Dehydrogenase Gene Mutation"
+          ],
+          "interventions": [
+            {
+              "armGroupLabels": [
+                "Treatment"
+              ],
+              "description": "Administered orally QD in a 28-day continuous dosing treatment cycle",
+              "name": "HMPL-306",
+              "type": "DRUG"
+            }
+          ],
+          "outcomes": {
+            "primaryOutcomes": [
+              {
+                "description": "RP2D determination took the following criteria under consideration: determination of maximum tolerated dose (MTD) achieved during the dose escalation part and assessment of safety, PK and pharmacodynamics (PD).",
+                "measure": "Dose Escalation Part: Recommended Phase 2 Dose (RP2D) of HMPL-306",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "DLT was defined as occurrence of any of the following treatment-emergent adverse events (TEAEs) during the DLT assessment window, unless clearly unrelated to the study drug as per investigator's discretion: nonhematologic toxicity: TEAEs of Grade \\>=4, Grade \\>=3 with the exception of those that resolved within 72 hours (h) of onset; hematologic toxicity with the exception of neutropenia or thrombocytopenia that occurred with active leukemic disease: Grade 3 or 4 neutropenia lasting more than 7 days, Grade 4 thrombocytopenia or Grade 3 thrombocytopenia with bleeding or any requirement for platelets (PLT) transfusion, Grade 3 or greater febrile neutropenia defined as absolute neutrophil count (ANC) 1000 per cubic millimeter with a single temperature of \\>38.3 degree Celsius (°C) or a sustained temperature of \\>=38°C for more than 1 h; any TEAE requiring a dose delay of \\>=14 days or cases of confirmed Hy's law.",
+                "measure": "Dose Escalation Part: Number of Patients With Dose-Limiting Toxicities (DLTs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "AE:unfavorable and unintended sign,symptom or disease temporally associated with use of study drug or other protocol-imposed intervention, whether or not considered related to study drug. SAE:AE that resulted in death,life-threatening AE,inpatient hospitalization/prolongation of existing hospitalization,persistent/significant incapacity or substantial disruption of ability to conduct normal life functions, abnormal pregnancy outcome in child born to female patient or female partner of male patient exposed to study drug or was important medical event that jeopardized patient and required medical/surgical intervention to prevent above outcome. TEAE:AE with onset on/after start of study drug until 30 days after last dose or prior to start of subsequent anti-tumor therapy, or AE with onset before start of study drug but worsened in severity after study drug administration, or AE onset after 30 days after last dose or after start of subsequent anti-tumor therapy and treatment-related SAEs.",
+                "measure": "Number of Patients With Treatment-Emergent Adverse Events and Treatment-Emergent Serious Adverse Events (TESAEs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to 30 days after the last dose of study drug, approximately 25.25 months"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "description": "BOR was defined as the best response during the anti-tumor evaluation period, which was determined using time point responses (TPRs) from date of the first dose of study drug from Cycle 1 in continuous cycle up until the last evaluable TPR prior to or on the date of PD/relapse according to the 2017 European LeukemiaNet criteria, or death; or withdrawal of consent or lost to follow-up; or receiving subsequent anti-cancer therapy, whichever was earlier. Number of patients with BOR \\[complete response (CR), CR with negative minimal residual disease (CRmrd-), CR with partial hematological recovery (CRh), CR with incomplete count (CRi), morphologic leukemia-free state (MLFS), partial response (PR), stable disease (SD), and PD\\] are reported.",
+                "measure": "Number of Patients With Best Overall Response (BOR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "ORR was defined as the percentage of patients with BOR being CRmrd-, CR, CRh, CRi, MLFS or PR. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%.",
+                "measure": "Objective Response Rate (ORR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "TTOR was defined as the time from the date of first study drug administration from Cycle 1 in continuous cycle to the date of first objective response (CRmrd-, CR, CRh, CRi, MLFS, or PR). CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%.",
+                "measure": "Time to Objective Response (TTOR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "DoOR was defined as the time from the first occurrence of objective response (CRmrd-, CR, CRh, CRi, MLFS, or PR) until PD, relapse, or death due to any cause, whichever came first. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%.",
+                "measure": "Duration of Objective Response (DoOR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "CBR was defined as the percentage of patients with BOR being CRmrd-, CR, CRh, CRi, MLFS, PR, or SD lasting for 3 cycles. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%. SD: Not met criteria for CR, CRi, CRmrd-, MLFS, PR, or PD.",
+                "measure": "Clinical Benefit Rate (CBR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "PFS was defined as the time from the start of study drug from Cycle 1 in continuous cycle to PD, or relapse, or death due to any cause, whichever occurred first. PD was defined as increase in bone marrow blast percentage and/or absolute peripheral blood blast cells: a) myeloblasts percentage increased from baseline by \\>50% (if blast cells at baseline were \\<30%, net increased value needs to be \\>=15%) or myeloblasts percentage \\>70% continued for at least 3 months; ANC was not seen to be improved by at least 100%, reached (\\>0.5x10\\^9/L and/or PLT reached \\>50x10\\^9/L, without blood transfusion); b) the absolute peripheral blood blast cell count (WBCxblast cell ratio) increased by \\>50% and reached \\>25x10\\^9/L (without differentiation syndrome); or new extramedullary diseases.",
+                "measure": "Progression-Free Survival (PFS)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "OS was defined as the time from the start of study drug from Cycle 1 in continuous cycle until the date of death due to any cause.",
+                "measure": "Overall Survival (OS)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to date of death due to any cause, approximately 45 months"
+              },
+              {
+                "description": "EFS was defined as the time from date of first study drug administration from Cycle 1 in continuous cycle to treatment failure, relapse from CR (including CRmrd-, CR, CRh and CRi), or death due to any cause, whichever occurred first. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. Treatment failure was defined as failure to achieve CR (including CRmrd-, CR, CRh, CRi) by Week 24. Patients who did not achieve CR (including CRmrd-, CR, CRh, CRi) by Week 24 were considered to have had an event at Day 1 of first study drug administration from Cycle 1 (excluding single oral dose from PK week). For remaining CR responders (including CRmrd-, CR, CRh and CRi), event time was time of either disease relapse or death due to any cause, whichever occurred first.",
+                "measure": "Event-Free Survival (EFS)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "Post-baseline TI was defined as the absence of red blood cell and platelet transfusions for a pre-specified time during treatment period which was defined from the first dose of study drug administration from Cycle 1 in continuous cycle to 30 days after the last dose date or prior to the start of a subsequent anti-tumor therapy (whichever came first). Number of patients with post-baseline TI for \\>=4 weeks and \\>=8 weeks is presented.",
+                "measure": "Number of Patients With Post-Baseline Transfusion Independence (TI)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to 30 days after the last dose of study drug, approximately 25.25 months"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine plasma concentrations of HMPL-306.",
+                "measure": "Plasma Concentrations of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24, 48, 72, 96, 120, 144, 168 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Cmax of HMPL-306.",
+                "measure": "Maximum Observed Plasma Concentration (Cmax) of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24, 48, 72, 96, 120, 144, 168 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Tmax of HMPL-306.",
+                "measure": "Time to Reach the Maximum Plasma Concentration (Tmax) of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24, 48, 72, 96, 120, 144, 168 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine AUC0-24 of HMPL-306.",
+                "measure": "Area Under the Plasma Concentration-Time Curve From 0 to 24 Hours (AUC0-24) of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine plasma concentrations of 2-HG which was a PD marker. The maximum inhibition rate for patients in different dose groups are presented.",
+                "measure": "Maximum Inhibition Rate of Plasma 2-Hydroxyglutaric Acid (2-HG)",
+                "timeFrame": "From PK Week Day 2 until end of treatment, approximately 24.25 months"
+              }
+            ]
+          },
+          "phase": [
+            "PHASE1"
+          ],
+          "primary_completion": "2025-01-15",
+          "results": true,
+          "start": "2021-04-12",
+          "status": "TERMINATED",
+          "title": "A Study of HMPL-306 in Advanced Hematological Malignancies With mIDH"
+        }
+      },
+      "changes": [
+        "title",
+        "indications",
+        "phase",
+        "status",
+        "enrollment",
+        "countries",
+        "start",
+        "primary_completion",
+        "completion",
+        "outcomes",
+        "eligibility",
+        "interventions",
+        "results"
+      ],
+      "guid": "e8a647bb109c78700f1b0868d710213dfb145855050bd62fa626ab7e28d52eb8",
+      "key": "id:NCT04764474",
+      "kind": "Material change",
+      "observed": "2026-10-26T14:27:19+00:00",
+      "records": [
+        {
+          "assets": [
+            "HMPL-306"
+          ],
+          "checked_at": "2026-10-26T14:27:19+00:00",
+          "completion": "2025-01-15",
+          "countries": [
+            "Spain"
+          ],
+          "eligibility": {
+            "ageRangeSecondaryIds": [],
+            "ageRanges": [
+              {
+                "ageRangeCategory": "3",
+                "ageRangeCategoryCode": "3",
+                "id": 128168
+              },
+              {
+                "ageRangeCategory": "4",
+                "ageRangeCategoryCode": "4",
+                "id": 128169
+              }
+            ],
+            "clinicalTrialGroups": [
+              {
+                "code": "2",
+                "name": "Patients"
+              }
+            ],
+            "isFemaleSubjects": true,
+            "isMaleSubjects": true,
+            "isVulnerablePopulationSelected": true
+          },
+          "enrollment": {
+            "reported": "37"
+          },
+          "id": "2024-516369-36-00",
+          "ids": [
+            "2024-516369-36-00"
+          ],
+          "indications": [
+            "- Acute myeloid leukemia\n- Myelodysplastic syndrome/ Myeloproliferative neoplasm\n- Angio-immunoblastic T-cell lymphoma\n- Other mIDH-positive hematological malignancies (other than tumor types mentioned above)"
+          ],
+          "interventions": [],
+          "outcomes": {
+            "other": "",
+            "primary": ""
+          },
+          "phase": [
+            "Human Pharmacology (Phase I)-  Other"
+          ],
+          "posted": "2026-01-07T02:35:48.026218659",
+          "primary_completion": "",
+          "protocol": "2020-306-GLOB1",
+          "registered": "",
+          "results": false,
+          "source": "EU CTIS",
+          "start": "2021-02-09",
+          "status": "Ended",
+          "title": "A Phase 1 Study of HMPL-306 in Advanced Hematological Malignancies with Isocitrate Dehydrogenase (IDH) Mutations",
+          "updated": "07/01/2026",
+          "url": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2024-516369-36-00"
+        },
+        {
+          "assets": [
+            "HMPL-306"
+          ],
+          "checked_at": "2026-10-26T14:27:19+00:00",
+          "completion": "2025-01-15",
+          "countries": [
+            "Spain",
+            "United States"
+          ],
+          "eligibility": {
+            "eligibilityCriteria": "Key Inclusion Criteria:\n\nSubjects may be enrolled in this study only if they satisfy all the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects aged ≥18 years.\n* ECOG performance status ≤ 2\n* Subjects with advanced relapsed, refractory, or resistant hematological malignancies, as defined below:\n\nPart 1:\n\n* Subjects with documented IDH mutation per local or institutional next generation sequence (NGS).\n* Subjects must be refractory to or intolerant of established therapies.\n* Subjects who have received prior IDH inhibitor treatment may be enrolled in the escalation phase.\n\nPart 2:\n\n* Subjects with documented IDH mutation of any of these subsets: IDH1 (R132C), IDH1 (R132H), IDH (R140Q), and IDH2 (R172K), including co-mutations and any combination thereof per local and institutional NGS.\n* Patients must have received at least 1 prior line of therapy with an IDH inhibitor. An established standard of care with proven benefit for which the patient is eligible, must not be available at the time of enrollment.\n* Patients with AML must not have standard therapeutic options available (including IDH inhibitors where approved) and have the following:\n\n  * i. Relapsed AML unsuitable for intensive chemotherapy or venetoclax-based regimen or target agents;\n  * ii. Primary refractory AML unsuitable for intensive chemotherapy or venetoclax-based regimen or target agents.\n  * iii. Relapsed/refractory AML that has progressed on prior IDH treatment\n\nKey Exclusion Criteria:\n\nSubjects are not eligible for enrollment into this study if they meet any of the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects who received an investigational agent \\<14 days prior to their first day of study drug administration.\n* Subjects who are pregnant or breastfeeding.\n* Subjects with an active severe infection, some treated infections and with an expected or with an unexplained fever \\>38.3°C during screening visits or on their first day of study drug administration.\n* Subjects with some current or prior heart conditions.\n* Subjects taking medications that are known to prolong the QT interval may not be eligible.\n* Subjects with immediately life-threatening, severe complications of leukemia such as uncontrolled bleeding, pneumonia with hypoxia or shock, and/or disseminated intravascular coagulation.\n* Some subjects with some current or prior gastrointestinal or liver diseases.\n* Subjects with inadequate organ function as defined by the protocol.\n* Subjects with a medical condition, physical examination finding, or clinical laboratory finding that, in the Investigators opinion, contraindicates the use of an investigational drug or that may affect the interpretation of the results or renders the subject at high risk from treatment complications.\n* Subjects with a known hypersensitivity to HMPL-306 or to any of its excipients.\n* Subjects with presence of second primary malignant tumors within the last 2 years, with the exception of the following, if medically controlled: basal cell carcinoma of the skin, squamous cell carcinoma of the skin, carcinoma in situ of the cervix, and carcinoma in situ of the breast.\n* Part 2 Only: The time since the last dose of prior IDH inhibitor treatment is within 30 days prior to the first day of study drug administration",
+            "healthyVolunteers": false,
+            "minimumAge": "18 Years",
+            "sex": "ALL",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "enrollment": {
+            "count": 46,
+            "type": "ACTUAL"
+          },
+          "id": "NCT04764474",
+          "ids": [
+            "NCT04764474"
+          ],
+          "indications": [
+            "Isocitrate Dehydrogenase Gene Mutation"
+          ],
+          "interventions": [
+            {
+              "armGroupLabels": [
+                "Treatment"
+              ],
+              "description": "Administered orally QD in a 28-day continuous dosing treatment cycle",
+              "name": "HMPL-306",
+              "type": "DRUG"
+            }
+          ],
+          "outcomes": {
+            "primaryOutcomes": [
+              {
+                "description": "RP2D determination took the following criteria under consideration: determination of maximum tolerated dose (MTD) achieved during the dose escalation part and assessment of safety, PK and pharmacodynamics (PD).",
+                "measure": "Dose Escalation Part: Recommended Phase 2 Dose (RP2D) of HMPL-306",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "DLT was defined as occurrence of any of the following treatment-emergent adverse events (TEAEs) during the DLT assessment window, unless clearly unrelated to the study drug as per investigator's discretion: nonhematologic toxicity: TEAEs of Grade \\>=4, Grade \\>=3 with the exception of those that resolved within 72 hours (h) of onset; hematologic toxicity with the exception of neutropenia or thrombocytopenia that occurred with active leukemic disease: Grade 3 or 4 neutropenia lasting more than 7 days, Grade 4 thrombocytopenia or Grade 3 thrombocytopenia with bleeding or any requirement for platelets (PLT) transfusion, Grade 3 or greater febrile neutropenia defined as absolute neutrophil count (ANC) 1000 per cubic millimeter with a single temperature of \\>38.3 degree Celsius (°C) or a sustained temperature of \\>=38°C for more than 1 h; any TEAE requiring a dose delay of \\>=14 days or cases of confirmed Hy's law.",
+                "measure": "Dose Escalation Part: Number of Patients With Dose-Limiting Toxicities (DLTs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "AE:unfavorable and unintended sign,symptom or disease temporally associated with use of study drug or other protocol-imposed intervention, whether or not considered related to study drug. SAE:AE that resulted in death,life-threatening AE,inpatient hospitalization/prolongation of existing hospitalization,persistent/significant incapacity or substantial disruption of ability to conduct normal life functions, abnormal pregnancy outcome in child born to female patient or female partner of male patient exposed to study drug or was important medical event that jeopardized patient and required medical/surgical intervention to prevent above outcome. TEAE:AE with onset on/after start of study drug until 30 days after last dose or prior to start of subsequent anti-tumor therapy, or AE with onset before start of study drug but worsened in severity after study drug administration, or AE onset after 30 days after last dose or after start of subsequent anti-tumor therapy and treatment-related SAEs.",
+                "measure": "Number of Patients With Treatment-Emergent Adverse Events and Treatment-Emergent Serious Adverse Events (TESAEs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to 30 days after the last dose of study drug, approximately 25.25 months"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "description": "BOR was defined as the best response during the anti-tumor evaluation period, which was determined using time point responses (TPRs) from date of the first dose of study drug from Cycle 1 in continuous cycle up until the last evaluable TPR prior to or on the date of PD/relapse according to the 2017 European LeukemiaNet criteria, or death; or withdrawal of consent or lost to follow-up; or receiving subsequent anti-cancer therapy, whichever was earlier. Number of patients with BOR \\[complete response (CR), CR with negative minimal residual disease (CRmrd-), CR with partial hematological recovery (CRh), CR with incomplete count (CRi), morphologic leukemia-free state (MLFS), partial response (PR), stable disease (SD), and PD\\] are reported.",
+                "measure": "Number of Patients With Best Overall Response (BOR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "ORR was defined as the percentage of patients with BOR being CRmrd-, CR, CRh, CRi, MLFS or PR. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%.",
+                "measure": "Objective Response Rate (ORR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "TTOR was defined as the time from the date of first study drug administration from Cycle 1 in continuous cycle to the date of first objective response (CRmrd-, CR, CRh, CRi, MLFS, or PR). CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%.",
+                "measure": "Time to Objective Response (TTOR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "DoOR was defined as the time from the first occurrence of objective response (CRmrd-, CR, CRh, CRi, MLFS, or PR) until PD, relapse, or death due to any cause, whichever came first. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%.",
+                "measure": "Duration of Objective Response (DoOR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "CBR was defined as the percentage of patients with BOR being CRmrd-, CR, CRh, CRi, MLFS, PR, or SD lasting for 3 cycles. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. MLFS: myeloblast \\<5%, blast cells without Auer bodies, no extramedullary lesion, no hematological recovery requirements. PR: met all hematological criteria for CR, percentage of myeloblasts decreased from baseline by least 50% and reached 5% to 25%. SD: Not met criteria for CR, CRi, CRmrd-, MLFS, PR, or PD.",
+                "measure": "Clinical Benefit Rate (CBR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "PFS was defined as the time from the start of study drug from Cycle 1 in continuous cycle to PD, or relapse, or death due to any cause, whichever occurred first. PD was defined as increase in bone marrow blast percentage and/or absolute peripheral blood blast cells: a) myeloblasts percentage increased from baseline by \\>50% (if blast cells at baseline were \\<30%, net increased value needs to be \\>=15%) or myeloblasts percentage \\>70% continued for at least 3 months; ANC was not seen to be improved by at least 100%, reached (\\>0.5x10\\^9/L and/or PLT reached \\>50x10\\^9/L, without blood transfusion); b) the absolute peripheral blood blast cell count (WBCxblast cell ratio) increased by \\>50% and reached \\>25x10\\^9/L (without differentiation syndrome); or new extramedullary diseases.",
+                "measure": "Progression-Free Survival (PFS)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "OS was defined as the time from the start of study drug from Cycle 1 in continuous cycle until the date of death due to any cause.",
+                "measure": "Overall Survival (OS)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to date of death due to any cause, approximately 45 months"
+              },
+              {
+                "description": "EFS was defined as the time from date of first study drug administration from Cycle 1 in continuous cycle to treatment failure, relapse from CR (including CRmrd-, CR, CRh and CRi), or death due to any cause, whichever occurred first. CR: myeloblast \\<5%, blast cells without Auer bodies, no blast cells in peripheral blood, no extramedullary lesion, ANC \\>=1.0x10\\^9/L, PLT \\>=100x10\\^9/L. CRmrd-: CR with negative RT-qPCR or CR with negative MFC. CRi: met all other criteria of CR but ANC \\<1.0x10\\^9/L or PLT \\<100x10\\^9/L. Treatment failure was defined as failure to achieve CR (including CRmrd-, CR, CRh, CRi) by Week 24. Patients who did not achieve CR (including CRmrd-, CR, CRh, CRi) by Week 24 were considered to have had an event at Day 1 of first study drug administration from Cycle 1 (excluding single oral dose from PK week). For remaining CR responders (including CRmrd-, CR, CRh and CRi), event time was time of either disease relapse or death due to any cause, whichever occurred first.",
+                "measure": "Event-Free Survival (EFS)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-7 days) for the first 24 weeks and every 12 weeks (+/-14 days) thereafter until end of treatment, or end of efficacy follow-up period, approximately 45 months"
+              },
+              {
+                "description": "Post-baseline TI was defined as the absence of red blood cell and platelet transfusions for a pre-specified time during treatment period which was defined from the first dose of study drug administration from Cycle 1 in continuous cycle to 30 days after the last dose date or prior to the start of a subsequent anti-tumor therapy (whichever came first). Number of patients with post-baseline TI for \\>=4 weeks and \\>=8 weeks is presented.",
+                "measure": "Number of Patients With Post-Baseline Transfusion Independence (TI)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to 30 days after the last dose of study drug, approximately 25.25 months"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine plasma concentrations of HMPL-306.",
+                "measure": "Plasma Concentrations of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24, 48, 72, 96, 120, 144, 168 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Cmax of HMPL-306.",
+                "measure": "Maximum Observed Plasma Concentration (Cmax) of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24, 48, 72, 96, 120, 144, 168 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Tmax of HMPL-306.",
+                "measure": "Time to Reach the Maximum Plasma Concentration (Tmax) of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24, 48, 72, 96, 120, 144, 168 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine AUC0-24 of HMPL-306.",
+                "measure": "Area Under the Plasma Concentration-Time Curve From 0 to 24 Hours (AUC0-24) of HMPL-306",
+                "timeFrame": "PK Week: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Day 1 PK week; Cycle 2 Day 1: Pre-dose and 0.5, 1, 2, 3, 4, 6, 8, 24 hours post-dose on Cycle 2 Day 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine plasma concentrations of 2-HG which was a PD marker. The maximum inhibition rate for patients in different dose groups are presented.",
+                "measure": "Maximum Inhibition Rate of Plasma 2-Hydroxyglutaric Acid (2-HG)",
+                "timeFrame": "From PK Week Day 2 until end of treatment, approximately 24.25 months"
+              }
+            ]
+          },
+          "phase": [
+            "PHASE1"
+          ],
+          "posted": "2021-02-21",
+          "primary_completion": "2025-01-15",
+          "protocol": "2020-306-GLOB1",
+          "registered": "2021-01-19",
+          "results": true,
+          "source": "ClinicalTrials.gov",
+          "start": "2021-04-12",
+          "status": "TERMINATED",
+          "title": "A Study of HMPL-306 in Advanced Hematological Malignancies With mIDH",
+          "updated": "2026-01-29",
+          "url": "https://clinicaltrials.gov/study/NCT04764474"
+        }
+      ]
+    },
+    {
+      "before": {
+        "ClinicalTrials.gov:NCT04762602": {
+          "completion": "2025-02-27",
+          "countries": [
+            "Spain",
+            "United States"
+          ],
+          "eligibility": {
+            "eligibilityCriteria": "Key Inclusion Criteria:\n\nSubjects are eligible for enrollment into this study if they meet any of the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects aged ≥18 years.\n* ECOG performance status 0 or 1\n* Subjects must have a documented IDH mutation per immunohistochemistry (IHC), polymerase chain reaction (PCR), or next generation sequencing (NGS) testing of tumor tissue.\n* Subjects must have histologically or cytologically documented, advanced or metastatic solid malignancy of any type that has recurred or progressed on available standard treatment and for which no curative therapy exists.\n\nKey Exclusion Criteria:\n\nSubjects are not eligible for enrollment into this study if they meet any of the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects who received an investigational agent \\<14 days prior to their first day of study drug administration\n* Subjects who are pregnant or breastfeeding\n* Subjects with an active severe infection, some treated infections and with an expected or with an unexplained fever \\>38.3°C during screening visits or on their first day of study drug administration.\n* Subjects with some current or prior heart conditions\n* Subjects taking medications that are known to prolong the QT interval may not be eligible\n* Subjects with immediately life-threatening, severe complications of leukemia such as uncontrolled bleeding, pneumonia with hypoxia or shock, and/or disseminated intravascular coagulation\n* Some subjects with some current or prior gastrointestinal or liver diseases\n* Subjects with inadequate organ function as defined by the protocol",
+            "healthyVolunteers": false,
+            "minimumAge": "18 Years",
+            "sex": "ALL",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "enrollment": {
+            "count": 42,
+            "type": "ACTUAL"
+          },
+          "indications": [
+            "Isocitrate Dehydrogenase Gene Mutation"
+          ],
+          "interventions": [
+            {
+              "armGroupLabels": [
+                "Part 1 Dose Escalation Cohorts",
+                "Part 2 Dose Expansion Cohorts"
+              ],
+              "description": "Administered orally QD in a 28-day continuous dosing treatment cycle",
+              "name": "HMPL-306",
+              "type": "DRUG"
+            }
+          ],
+          "outcomes": {
+            "primaryOutcomes": [
+              {
+                "description": "RP2D determination took the following criteria under consideration: determination of maximum tolerated dose (MTD) achieved during the dose escalation part and assessment of safety, pharmacokinetics (PK) and pharmacodynamics (PD). The modified toxicity probability interval-2 design was used to perform dose escalation and planned to determine MTD/RP2D.",
+                "measure": "Part 1: Recommended Phase 2 Dose (RP2D) of HMPL-306",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "DLT:occurrence of any of following treatment-emergent adverse events (TEAEs) during DLT assessment window unless clearly unrelated to study drug/judged by investigator as not clinically significant:\n\n1. Non-hematologic:TEAEs Grade \\>=4, Grade 3 except those which recovered to Grade \\<=1 within 3 days after supportive therapy administered for nausea,vomiting,diarrhea,constipation,fatigue,electrolyte imbalance;Grade 3 hypothyroidism, adrenal gland or pituitary insufficiency, and inflammatory reactions at tumor site \\& Grade 3 hypertension downgraded to Grade \\<=1 within 1 week with appropriate supportive therapy.\n2. Hematologic:Grade \\>=3 febrile neutropenia;Grade 4 neutropenia or thrombocytopenia;Grade 3 thrombocytopenia with clinically significant bleeding in addition to that requiring transfusion;Grade 4 anemia requiring a dose delay of \\>=14 days.\n3. Any life-threatening complication/abnormality not covered in National Cancer Institute Common Terminology Criteria for AEs version(v) 5.0.",
+                "measure": "Part 1: Number of Patients With Dose-limiting Toxicities (DLTs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "AE:unfavorable,unintended sign,symptom or disease temporally associated with use of study drug or other protocol-imposed drug, whether or not considered drug related. SAE:AE that resulted in death, was life threatening, inpatient hospitalization/prolongation of existing hospitalization, persistent/significant incapacity or substantial disruption of ability to conduct normal life functions, congenital anomaly/birth defect, important medical event that jeopardized patient and required medical/surgical intervention to prevent above outcome or signs, symptoms or clinical sequelae of suspected overdose of either study drug or a concomitant medication. TEAE:AE with onset on/after start of study drug until 30 days after last dose or prior to start of subsequent anti-tumor therapy, or AE with onset before start of study drug but worsened in severity after study drug administration or beyond 30 days after last dose or after start of subsequent anti-tumor therapy and treatment-related SAEs.",
+                "measure": "Parts 1 and 2: Number of Patients With Treatment-Emergent Adverse Events and Treatment-Emergent Serious Adverse Events (TESAEs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to 30 days after the last dose of study drug, approximately 43 months for Part 1"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "description": "ORR by response evaluation criteria in solid tumors (RECIST) v1.1 was defined as the percentage of patients with confirmed best overall response (BOR) of complete response (CR) or partial response (PR) as determined by the investigator. CR: disappearance of all target lesions. PR: at least a 30% decrease in the sum of diameters of target lesions, taking as reference the baseline sum of diameters. ORR by response assessment in neuro-oncology criteria (RANO) was defined as the percentage of patients with a BOR of CR or PR or minor response (MR) as determined by the investigator using RANO criteria mentioned in protocol for glioma patients.",
+                "measure": "Parts 1 and 2: Objective Response Rate (ORR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "DCR by RECIST v1.1 was defined as percentage of patients with BOR of CR, PR, or stable disease (SD) lasting at least 7 weeks as determined by investigator.CR: disappearance of all target lesions.PR: at least a 30% decrease in sum of diameters of target lesions, taking as reference baseline sum of diameters.SD: neither sufficient shrinkage to qualify for PR nor sufficient increase to qualify for Pd, taking as reference the smallest sum on study. Pd: at least 20% increase in sum of diameters of target lesions, taking as reference smallest sum on study (nadir), including baseline. In addition to relative increase of 20%, sum must also demonstrate an absolute increase of at least 5 millimeters (mm). The appearance of 1 or more new lesions was also considered progression. DCR by RANO was defined as percentage of patients with BOR of CR, PR, MR, or SD lasting at least 7 weeks as determined by investigator using RANO criteria mentioned in protocol for glioma patients.",
+                "measure": "Parts 1 and 2: Disease Control Rate (DCR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "DoR by RECIST v1.1 was defined as the time from the first occurrence of confirmed PR or confirmed CR until Pd or death, whichever came first. CR: disappearance of all target lesions. PR: at least a 30% decrease in the sum of diameters of target lesions, taking as reference the baseline sum of diameters. Pd: at least a 20% increase in the sum of diameters of target lesions, taking as reference the smallest sum on study (nadir), including baseline. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of at least 5 mm. The appearance of one or more new lesions was also considered progression. DoR by RANO was defined as the time from the first occurrence of CR or PR or MR using RANO criteria mentioned in protocol for glioma patients, until disease progression or death, whichever comes first. Due to early study termination, Part 2 was never initiated.",
+                "measure": "Parts 1 and 2: Duration of Response (DoR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "TTR by RECIST v1.1 was defined as the time from start of study treatment until the date of first documented objective response, either confirmed CR or confirmed PR (whichever status was recorded first). CR: disappearance of all target lesions. PR: at least a 30% decrease in the sum of diameters of target lesions, taking as reference the baseline sum of diameters. TTR by RANO was defined as the time from start of study treatment until the date of first documented objective response, either CR or PR or MR (whichever status was recorded first) using RANO criteria mentioned in protocol for glioma patients. Due to early study termination, Part 2 was never initiated.",
+                "measure": "Parts 1 and 2: Time to Response (TTR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "PFS was defined as the time from the date of first administration of study drug until the first radiographic documentation of objective progression as assessed by investigator using RECIST v1.1 or RANO criteria for glioma patients, or death from any cause. As per RECIST v1.1: Pd: at least a 20% increase in the sum of diameters of target lesions, taking as reference the smallest sum on study (nadir), including baseline. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of at least 5 mm. The appearance of 1 or more new lesions was also considered progression. Criteria for RANO as mentioned in protocol.",
+                "measure": "Parts 1 and 2: Progression-free Survival (PFS)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Cmax of HMPL-306.",
+                "measure": "Parts 1 and 2: Maximum Observed Plasma Concentration (Cmax) of HMPL-306",
+                "timeFrame": "Pre-dose and 0.5, 1, 2, 3, 4, 6, 8 and 24 hours post-dose on Day 1 of Cycles 1 and 2 for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Tmax of HMPL-306.",
+                "measure": "Parts 1 and 2: Time to Peak Plasma Concentration (Tmax) of HMPL-306",
+                "timeFrame": "Pre-dose and 0.5, 1, 2, 3, 4, 6, 8 and 24 hours post-dose on Day 1 of Cycles 1 and 2 for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine AUC0-24 of HMPL-306.",
+                "measure": "Parts 1 and 2: Area Under the Plasma Concentration-Time Curve From 0 to 24 Hours (AUC0-24) of HMPL-306",
+                "timeFrame": "Pre-dose and 0.5, 1, 2, 3, 4, 6, 8 and 24 hours post-dose on Day 1 of Cycles 1 and 2 for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine plasma concentrations of 2-HG which was a PD marker. The maximum inhibition rate of 2-HG for patients in different dose groups is presented.",
+                "measure": "Parts 1 and 2: Maximum Inhibition Rate of Plasma 2-Hydroxyglutaric Acid (2-HG)",
+                "timeFrame": "From screening (Day -28) until end of treatment, approximately 42 months for Part 1"
+              }
+            ]
+          },
+          "phase": [
+            "PHASE1"
+          ],
+          "primary_completion": "2025-02-27",
+          "results": true,
+          "start": "2021-02-28",
+          "status": "TERMINATED",
+          "title": "A Study of HMPL-306 in Advanced Solid Tumors With IDH Mutations"
+        }
+      },
+      "changes": [
+        "title",
+        "indications",
+        "phase",
+        "status",
+        "enrollment",
+        "countries",
+        "start",
+        "primary_completion",
+        "completion",
+        "outcomes",
+        "eligibility",
+        "interventions",
+        "results"
+      ],
+      "guid": "5f9ea887bc8f1ae7667c3076736379a25f74af82c020805125b997abcc1a39ab",
+      "key": "id:NCT04762602",
+      "kind": "Material change",
+      "observed": "2026-10-26T14:27:19+00:00",
+      "records": [
+        {
+          "assets": [
+            "HMPL-306"
+          ],
+          "checked_at": "2026-10-26T14:27:19+00:00",
+          "completion": "2025-02-27",
+          "countries": [
+            "Spain"
+          ],
+          "eligibility": {
+            "ageRangeSecondaryIds": [],
+            "ageRanges": [
+              {
+                "ageRangeCategory": "4",
+                "ageRangeCategoryCode": "4",
+                "id": 136579
+              },
+              {
+                "ageRangeCategory": "3",
+                "ageRangeCategoryCode": "3",
+                "id": 136578
+              }
+            ],
+            "clinicalTrialGroups": [
+              {
+                "code": "2",
+                "name": "Patients"
+              }
+            ],
+            "isFemaleSubjects": true,
+            "isMaleSubjects": true,
+            "isVulnerablePopulationSelected": true
+          },
+          "enrollment": {
+            "reported": "24"
+          },
+          "id": "2024-516370-30-00",
+          "ids": [
+            "NCT04762602",
+            "2024-516370-30-00"
+          ],
+          "indications": [
+            "- Locally advanced or metastatic solid tumors\n- Cholangiocarcinoma\n- Skeletal chondrosarcoma\n- Low-grade glioma\n- Any other solid tumor harboring an IDH mutation"
+          ],
+          "interventions": [],
+          "outcomes": {
+            "other": "",
+            "primary": ""
+          },
+          "phase": [
+            "Human Pharmacology (Phase I)-  Other"
+          ],
+          "posted": "2026-01-27T02:37:17.250048967",
+          "primary_completion": "",
+          "protocol": "2020-306-GLOB2",
+          "registered": "",
+          "results": false,
+          "source": "EU CTIS",
+          "start": "2021-02-09",
+          "status": "Ended",
+          "title": "A Phase 1 Study of HMPL-306 in Locally Advanced Solid Tumors with IDH mutations",
+          "updated": "27/01/2026",
+          "url": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2024-516370-30-00"
+        },
+        {
+          "assets": [
+            "HMPL-306"
+          ],
+          "checked_at": "2026-10-26T14:27:19+00:00",
+          "completion": "2025-02-27",
+          "countries": [
+            "Spain",
+            "United States"
+          ],
+          "eligibility": {
+            "eligibilityCriteria": "Key Inclusion Criteria:\n\nSubjects are eligible for enrollment into this study if they meet any of the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects aged ≥18 years.\n* ECOG performance status 0 or 1\n* Subjects must have a documented IDH mutation per immunohistochemistry (IHC), polymerase chain reaction (PCR), or next generation sequencing (NGS) testing of tumor tissue.\n* Subjects must have histologically or cytologically documented, advanced or metastatic solid malignancy of any type that has recurred or progressed on available standard treatment and for which no curative therapy exists.\n\nKey Exclusion Criteria:\n\nSubjects are not eligible for enrollment into this study if they meet any of the following criteria (NOTE: This is not an exhaustive list):\n\n* Subjects who received an investigational agent \\<14 days prior to their first day of study drug administration\n* Subjects who are pregnant or breastfeeding\n* Subjects with an active severe infection, some treated infections and with an expected or with an unexplained fever \\>38.3°C during screening visits or on their first day of study drug administration.\n* Subjects with some current or prior heart conditions\n* Subjects taking medications that are known to prolong the QT interval may not be eligible\n* Subjects with immediately life-threatening, severe complications of leukemia such as uncontrolled bleeding, pneumonia with hypoxia or shock, and/or disseminated intravascular coagulation\n* Some subjects with some current or prior gastrointestinal or liver diseases\n* Subjects with inadequate organ function as defined by the protocol",
+            "healthyVolunteers": false,
+            "minimumAge": "18 Years",
+            "sex": "ALL",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "enrollment": {
+            "count": 42,
+            "type": "ACTUAL"
+          },
+          "id": "NCT04762602",
+          "ids": [
+            "NCT04762602"
+          ],
+          "indications": [
+            "Isocitrate Dehydrogenase Gene Mutation"
+          ],
+          "interventions": [
+            {
+              "armGroupLabels": [
+                "Part 1 Dose Escalation Cohorts",
+                "Part 2 Dose Expansion Cohorts"
+              ],
+              "description": "Administered orally QD in a 28-day continuous dosing treatment cycle",
+              "name": "HMPL-306",
+              "type": "DRUG"
+            }
+          ],
+          "outcomes": {
+            "primaryOutcomes": [
+              {
+                "description": "RP2D determination took the following criteria under consideration: determination of maximum tolerated dose (MTD) achieved during the dose escalation part and assessment of safety, pharmacokinetics (PK) and pharmacodynamics (PD). The modified toxicity probability interval-2 design was used to perform dose escalation and planned to determine MTD/RP2D.",
+                "measure": "Part 1: Recommended Phase 2 Dose (RP2D) of HMPL-306",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "DLT:occurrence of any of following treatment-emergent adverse events (TEAEs) during DLT assessment window unless clearly unrelated to study drug/judged by investigator as not clinically significant:\n\n1. Non-hematologic:TEAEs Grade \\>=4, Grade 3 except those which recovered to Grade \\<=1 within 3 days after supportive therapy administered for nausea,vomiting,diarrhea,constipation,fatigue,electrolyte imbalance;Grade 3 hypothyroidism, adrenal gland or pituitary insufficiency, and inflammatory reactions at tumor site \\& Grade 3 hypertension downgraded to Grade \\<=1 within 1 week with appropriate supportive therapy.\n2. Hematologic:Grade \\>=3 febrile neutropenia;Grade 4 neutropenia or thrombocytopenia;Grade 3 thrombocytopenia with clinically significant bleeding in addition to that requiring transfusion;Grade 4 anemia requiring a dose delay of \\>=14 days.\n3. Any life-threatening complication/abnormality not covered in National Cancer Institute Common Terminology Criteria for AEs version(v) 5.0.",
+                "measure": "Part 1: Number of Patients With Dose-limiting Toxicities (DLTs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to Day 28 of Cycle 1"
+              },
+              {
+                "description": "AE:unfavorable,unintended sign,symptom or disease temporally associated with use of study drug or other protocol-imposed drug, whether or not considered drug related. SAE:AE that resulted in death, was life threatening, inpatient hospitalization/prolongation of existing hospitalization, persistent/significant incapacity or substantial disruption of ability to conduct normal life functions, congenital anomaly/birth defect, important medical event that jeopardized patient and required medical/surgical intervention to prevent above outcome or signs, symptoms or clinical sequelae of suspected overdose of either study drug or a concomitant medication. TEAE:AE with onset on/after start of study drug until 30 days after last dose or prior to start of subsequent anti-tumor therapy, or AE with onset before start of study drug but worsened in severity after study drug administration or beyond 30 days after last dose or after start of subsequent anti-tumor therapy and treatment-related SAEs.",
+                "measure": "Parts 1 and 2: Number of Patients With Treatment-Emergent Adverse Events and Treatment-Emergent Serious Adverse Events (TESAEs)",
+                "timeFrame": "From the first dose of study drug (Day 1) up to 30 days after the last dose of study drug, approximately 43 months for Part 1"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "description": "ORR by response evaluation criteria in solid tumors (RECIST) v1.1 was defined as the percentage of patients with confirmed best overall response (BOR) of complete response (CR) or partial response (PR) as determined by the investigator. CR: disappearance of all target lesions. PR: at least a 30% decrease in the sum of diameters of target lesions, taking as reference the baseline sum of diameters. ORR by response assessment in neuro-oncology criteria (RANO) was defined as the percentage of patients with a BOR of CR or PR or minor response (MR) as determined by the investigator using RANO criteria mentioned in protocol for glioma patients.",
+                "measure": "Parts 1 and 2: Objective Response Rate (ORR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "DCR by RECIST v1.1 was defined as percentage of patients with BOR of CR, PR, or stable disease (SD) lasting at least 7 weeks as determined by investigator.CR: disappearance of all target lesions.PR: at least a 30% decrease in sum of diameters of target lesions, taking as reference baseline sum of diameters.SD: neither sufficient shrinkage to qualify for PR nor sufficient increase to qualify for Pd, taking as reference the smallest sum on study. Pd: at least 20% increase in sum of diameters of target lesions, taking as reference smallest sum on study (nadir), including baseline. In addition to relative increase of 20%, sum must also demonstrate an absolute increase of at least 5 millimeters (mm). The appearance of 1 or more new lesions was also considered progression. DCR by RANO was defined as percentage of patients with BOR of CR, PR, MR, or SD lasting at least 7 weeks as determined by investigator using RANO criteria mentioned in protocol for glioma patients.",
+                "measure": "Parts 1 and 2: Disease Control Rate (DCR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "DoR by RECIST v1.1 was defined as the time from the first occurrence of confirmed PR or confirmed CR until Pd or death, whichever came first. CR: disappearance of all target lesions. PR: at least a 30% decrease in the sum of diameters of target lesions, taking as reference the baseline sum of diameters. Pd: at least a 20% increase in the sum of diameters of target lesions, taking as reference the smallest sum on study (nadir), including baseline. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of at least 5 mm. The appearance of one or more new lesions was also considered progression. DoR by RANO was defined as the time from the first occurrence of CR or PR or MR using RANO criteria mentioned in protocol for glioma patients, until disease progression or death, whichever comes first. Due to early study termination, Part 2 was never initiated.",
+                "measure": "Parts 1 and 2: Duration of Response (DoR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "TTR by RECIST v1.1 was defined as the time from start of study treatment until the date of first documented objective response, either confirmed CR or confirmed PR (whichever status was recorded first). CR: disappearance of all target lesions. PR: at least a 30% decrease in the sum of diameters of target lesions, taking as reference the baseline sum of diameters. TTR by RANO was defined as the time from start of study treatment until the date of first documented objective response, either CR or PR or MR (whichever status was recorded first) using RANO criteria mentioned in protocol for glioma patients. Due to early study termination, Part 2 was never initiated.",
+                "measure": "Parts 1 and 2: Time to Response (TTR)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "PFS was defined as the time from the date of first administration of study drug until the first radiographic documentation of objective progression as assessed by investigator using RECIST v1.1 or RANO criteria for glioma patients, or death from any cause. As per RECIST v1.1: Pd: at least a 20% increase in the sum of diameters of target lesions, taking as reference the smallest sum on study (nadir), including baseline. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of at least 5 mm. The appearance of 1 or more new lesions was also considered progression. Criteria for RANO as mentioned in protocol.",
+                "measure": "Parts 1 and 2: Progression-free Survival (PFS)",
+                "timeFrame": "Tumor assessments performed every 8 weeks (+/-1 week) from Cycle 1 Day 1 for the first 24 weeks and every 12 weeks (+/-2 weeks) thereafter until end of treatment or end of efficacy follow-up period, approximately 47 months for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Cmax of HMPL-306.",
+                "measure": "Parts 1 and 2: Maximum Observed Plasma Concentration (Cmax) of HMPL-306",
+                "timeFrame": "Pre-dose and 0.5, 1, 2, 3, 4, 6, 8 and 24 hours post-dose on Day 1 of Cycles 1 and 2 for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine Tmax of HMPL-306.",
+                "measure": "Parts 1 and 2: Time to Peak Plasma Concentration (Tmax) of HMPL-306",
+                "timeFrame": "Pre-dose and 0.5, 1, 2, 3, 4, 6, 8 and 24 hours post-dose on Day 1 of Cycles 1 and 2 for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine AUC0-24 of HMPL-306.",
+                "measure": "Parts 1 and 2: Area Under the Plasma Concentration-Time Curve From 0 to 24 Hours (AUC0-24) of HMPL-306",
+                "timeFrame": "Pre-dose and 0.5, 1, 2, 3, 4, 6, 8 and 24 hours post-dose on Day 1 of Cycles 1 and 2 for Part 1"
+              },
+              {
+                "description": "Blood samples were collected at the specified timepoints to determine plasma concentrations of 2-HG which was a PD marker. The maximum inhibition rate of 2-HG for patients in different dose groups is presented.",
+                "measure": "Parts 1 and 2: Maximum Inhibition Rate of Plasma 2-Hydroxyglutaric Acid (2-HG)",
+                "timeFrame": "From screening (Day -28) until end of treatment, approximately 42 months for Part 1"
+              }
+            ]
+          },
+          "phase": [
+            "PHASE1"
+          ],
+          "posted": "2021-02-21",
+          "primary_completion": "2025-02-27",
+          "protocol": "2020-306-GLOB2",
+          "registered": "2021-02-06",
+          "results": true,
+          "source": "ClinicalTrials.gov",
+          "start": "2021-02-28",
+          "status": "TERMINATED",
+          "title": "A Study of HMPL-306 in Advanced Solid Tumors With IDH Mutations",
+          "updated": "2026-03-27",
+          "url": "https://clinicaltrials.gov/study/NCT04762602"
+        }
+      ]
     }
   ],
   "records": {
@@ -2075,7 +2764,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2026-07-16",
       "countries": [
         "Japan"
@@ -2168,7 +2857,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2022-12-30",
       "countries": [
         "China"
@@ -2274,7 +2963,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2027-02-28",
       "countries": [
         "Japan"
@@ -2387,7 +3076,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2025-02-27",
       "countries": [
         "Spain",
@@ -2510,7 +3199,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2025-01-15",
       "countries": [
         "Spain",
@@ -2657,7 +3346,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2030-12-01",
       "countries": [
         "Australia",
@@ -2929,7 +3618,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2025-03-26",
       "countries": [
         "Australia"
@@ -3116,7 +3805,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2024-08-15",
       "countries": [
         "China"
@@ -3248,7 +3937,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2029-09-30",
       "countries": [
         "China"
@@ -3380,7 +4069,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2025-07-02",
       "countries": [
         "China"
@@ -3467,7 +4156,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2027-12",
       "countries": [
         "China"
@@ -3576,7 +4265,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2029-09",
       "countries": [
         "Switzerland"
@@ -3695,11 +4384,138 @@
       "updated": "2026-09-21",
       "url": "https://clinicaltrials.gov/study/NCT07832123"
     },
+    "EU CTIS:2024-516369-36-00": {
+      "assets": [
+        "HMPL-306"
+      ],
+      "checked_at": "2026-10-26T14:27:19+00:00",
+      "completion": "2025-01-15",
+      "countries": [
+        "Spain"
+      ],
+      "eligibility": {
+        "ageRangeSecondaryIds": [],
+        "ageRanges": [
+          {
+            "ageRangeCategory": "3",
+            "ageRangeCategoryCode": "3",
+            "id": 128168
+          },
+          {
+            "ageRangeCategory": "4",
+            "ageRangeCategoryCode": "4",
+            "id": 128169
+          }
+        ],
+        "clinicalTrialGroups": [
+          {
+            "code": "2",
+            "name": "Patients"
+          }
+        ],
+        "isFemaleSubjects": true,
+        "isMaleSubjects": true,
+        "isVulnerablePopulationSelected": true
+      },
+      "enrollment": {
+        "reported": "37"
+      },
+      "id": "2024-516369-36-00",
+      "ids": [
+        "2024-516369-36-00"
+      ],
+      "indications": [
+        "- Acute myeloid leukemia\n- Myelodysplastic syndrome/ Myeloproliferative neoplasm\n- Angio-immunoblastic T-cell lymphoma\n- Other mIDH-positive hematological malignancies (other than tumor types mentioned above)"
+      ],
+      "interventions": [],
+      "outcomes": {
+        "other": "",
+        "primary": ""
+      },
+      "phase": [
+        "Human Pharmacology (Phase I)-  Other"
+      ],
+      "posted": "2026-01-07T02:35:48.026218659",
+      "primary_completion": "",
+      "protocol": "2020-306-GLOB1",
+      "registered": "",
+      "results": false,
+      "source": "EU CTIS",
+      "start": "2021-02-09",
+      "status": "Ended",
+      "title": "A Phase 1 Study of HMPL-306 in Advanced Hematological Malignancies with Isocitrate Dehydrogenase (IDH) Mutations",
+      "updated": "07/01/2026",
+      "url": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2024-516369-36-00"
+    },
+    "EU CTIS:2024-516370-30-00": {
+      "assets": [
+        "HMPL-306"
+      ],
+      "checked_at": "2026-10-26T14:27:19+00:00",
+      "completion": "2025-02-27",
+      "countries": [
+        "Spain"
+      ],
+      "eligibility": {
+        "ageRangeSecondaryIds": [],
+        "ageRanges": [
+          {
+            "ageRangeCategory": "4",
+            "ageRangeCategoryCode": "4",
+            "id": 136579
+          },
+          {
+            "ageRangeCategory": "3",
+            "ageRangeCategoryCode": "3",
+            "id": 136578
+          }
+        ],
+        "clinicalTrialGroups": [
+          {
+            "code": "2",
+            "name": "Patients"
+          }
+        ],
+        "isFemaleSubjects": true,
+        "isMaleSubjects": true,
+        "isVulnerablePopulationSelected": true
+      },
+      "enrollment": {
+        "reported": "24"
+      },
+      "id": "2024-516370-30-00",
+      "ids": [
+        "NCT04762602",
+        "2024-516370-30-00"
+      ],
+      "indications": [
+        "- Locally advanced or metastatic solid tumors\n- Cholangiocarcinoma\n- Skeletal chondrosarcoma\n- Low-grade glioma\n- Any other solid tumor harboring an IDH mutation"
+      ],
+      "interventions": [],
+      "outcomes": {
+        "other": "",
+        "primary": ""
+      },
+      "phase": [
+        "Human Pharmacology (Phase I)-  Other"
+      ],
+      "posted": "2026-01-27T02:37:17.250048967",
+      "primary_completion": "",
+      "protocol": "2020-306-GLOB2",
+      "registered": "",
+      "results": false,
+      "source": "EU CTIS",
+      "start": "2021-02-09",
+      "status": "Ended",
+      "title": "A Phase 1 Study of HMPL-306 in Locally Advanced Solid Tumors with IDH mutations",
+      "updated": "27/01/2026",
+      "url": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2024-516370-30-00"
+    },
     "Japan jRCT:JRCT2071240033": {
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "",
       "countries": [
         "Japan"
@@ -3737,7 +4553,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-26T14:23:37+00:00",
+      "checked_at": "2026-10-26T14:27:19+00:00",
       "completion": "2027年02月28日",
       "countries": [
         "Japan"
@@ -4238,10 +5054,60 @@
           "start": "2021-02-28",
           "status": "TERMINATED",
           "title": "A Study of HMPL-306 in Advanced Solid Tumors With IDH Mutations"
+        },
+        "EU CTIS:2024-516370-30-00": {
+          "completion": "2025-02-27",
+          "countries": [
+            "Spain"
+          ],
+          "eligibility": {
+            "ageRangeSecondaryIds": [],
+            "ageRanges": [
+              {
+                "ageRangeCategory": "4",
+                "ageRangeCategoryCode": "4",
+                "id": 136579
+              },
+              {
+                "ageRangeCategory": "3",
+                "ageRangeCategoryCode": "3",
+                "id": 136578
+              }
+            ],
+            "clinicalTrialGroups": [
+              {
+                "code": "2",
+                "name": "Patients"
+              }
+            ],
+            "isFemaleSubjects": true,
+            "isMaleSubjects": true,
+            "isVulnerablePopulationSelected": true
+          },
+          "enrollment": {
+            "reported": "24"
+          },
+          "indications": [
+            "- Locally advanced or metastatic solid tumors\n- Cholangiocarcinoma\n- Skeletal chondrosarcoma\n- Low-grade glioma\n- Any other solid tumor harboring an IDH mutation"
+          ],
+          "interventions": [],
+          "outcomes": {
+            "other": "",
+            "primary": ""
+          },
+          "phase": [
+            "Human Pharmacology (Phase I)-  Other"
+          ],
+          "primary_completion": "",
+          "results": false,
+          "start": "2021-02-09",
+          "status": "Ended",
+          "title": "A Phase 1 Study of HMPL-306 in Locally Advanced Solid Tumors with IDH mutations"
         }
       },
-      "sequence": 1,
+      "sequence": 2,
       "tokens": [
+        "id:2024-516370-30-00",
         "id:NCT04762602",
         "protocol:HMPL-306:2020306glob2"
       ]
@@ -4380,10 +5246,60 @@
           "start": "2021-04-12",
           "status": "TERMINATED",
           "title": "A Study of HMPL-306 in Advanced Hematological Malignancies With mIDH"
+        },
+        "EU CTIS:2024-516369-36-00": {
+          "completion": "2025-01-15",
+          "countries": [
+            "Spain"
+          ],
+          "eligibility": {
+            "ageRangeSecondaryIds": [],
+            "ageRanges": [
+              {
+                "ageRangeCategory": "3",
+                "ageRangeCategoryCode": "3",
+                "id": 128168
+              },
+              {
+                "ageRangeCategory": "4",
+                "ageRangeCategoryCode": "4",
+                "id": 128169
+              }
+            ],
+            "clinicalTrialGroups": [
+              {
+                "code": "2",
+                "name": "Patients"
+              }
+            ],
+            "isFemaleSubjects": true,
+            "isMaleSubjects": true,
+            "isVulnerablePopulationSelected": true
+          },
+          "enrollment": {
+            "reported": "37"
+          },
+          "indications": [
+            "- Acute myeloid leukemia\n- Myelodysplastic syndrome/ Myeloproliferative neoplasm\n- Angio-immunoblastic T-cell lymphoma\n- Other mIDH-positive hematological malignancies (other than tumor types mentioned above)"
+          ],
+          "interventions": [],
+          "outcomes": {
+            "other": "",
+            "primary": ""
+          },
+          "phase": [
+            "Human Pharmacology (Phase I)-  Other"
+          ],
+          "primary_completion": "",
+          "results": false,
+          "start": "2021-02-09",
+          "status": "Ended",
+          "title": "A Phase 1 Study of HMPL-306 in Advanced Hematological Malignancies with Isocitrate Dehydrogenase (IDH) Mutations"
         }
       },
-      "sequence": 1,
+      "sequence": 2,
       "tokens": [
+        "id:2024-516369-36-00",
         "id:NCT04764474",
         "protocol:HMPL-306:2020306glob1"
       ]
@@ -5396,5 +6312,5 @@
       ]
     }
   },
-  "updated_at": "2026-10-26T14:23:37+00:00"
+  "updated_at": "2026-10-26T14:27:19+00:00"
 }
