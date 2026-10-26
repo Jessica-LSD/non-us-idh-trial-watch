@@ -1,0 +1,56 @@
+[
+  {
+    "source": "ClinicalTrials.gov",
+    "status": "verified: discovery + details",
+    "detail": "12 matching studies with explicit non-US sites; API v2, all pages checked",
+    "checked_at": "2026-10-26T14:23:37+00:00"
+  },
+  {
+    "source": "Japan jRCT",
+    "status": "verified: known records only",
+    "detail": "2/2 known records read. New-trial discovery unsupported. ",
+    "checked_at": "2026-10-26T14:23:37+00:00"
+  },
+  {
+    "source": "China ChiCTR",
+    "status": "DEGRADED / FAILED",
+    "detail": "0/1 known records read. New-trial discovery unsupported. HTTP Error 405: Not Allowed",
+    "checked_at": "2026-10-26T14:23:37+00:00"
+  },
+  {
+    "source": "China CDE / NMPA",
+    "detail": "Priority source. Tested 2026-10-26: search endpoint returned HTTP 202 JavaScript challenge rather than trial results. No verified automated search/detail integration. https://www.chinadrugtrials.org.cn/",
+    "checked_at": "2026-10-26 verification attempt; not checked daily",
+    "status": "UNSUPPORTED — not monitored"
+  },
+  {
+    "source": "EU CTIS",
+    "detail": "Priority source. Tested 2026-10-26: public API search request blocked with HTTP 403. No verified search or detail integration. https://euclinicaltrials.eu/",
+    "checked_at": "2026-10-26 verification attempt; not checked daily",
+    "status": "UNSUPPORTED — not monitored"
+  },
+  {
+    "source": "WHO ICTRP",
+    "detail": "Priority source. Official portal states crawling service currently unavailable. Manual XML export exists but no live automated integration is verified. https://trialsearch.who.int/",
+    "checked_at": "2026-10-26 verification attempt; not checked daily",
+    "status": "UNSUPPORTED — not monitored"
+  },
+  {
+    "source": "Australia / New Zealand ANZCTR",
+    "detail": "Tested 2026-10-26: trial search returned HTTP 403. Not independently monitored; some records may have cross-registration on ClinicalTrials.gov. https://www.anzctr.org.au/",
+    "checked_at": "2026-10-26 verification attempt; not checked daily",
+    "status": "UNSUPPORTED — not monitored"
+  },
+  {
+    "source": "ISRCTN",
+    "detail": "Tested 2026-10-26: search returned a JavaScript/cookie interstitial. Registry recommends its XML API; integration not verified. https://www.isrctn.com/page/faqs",
+    "checked_at": "2026-10-26 verification attempt; not checked daily",
+    "status": "UNSUPPORTED — not monitored"
+  },
+  {
+    "source": "EU legacy EudraCT, Japan UMIN/JPRN, India CTRI, Korea CRIS, Germany DRKS, Canada Health Canada and other national registries",
+    "detail": "Not implemented or independently verified. No claim of complete national coverage. Supplementary ClinicalTrials.gov records may include sites in these countries.",
+    "checked_at": "2026-10-26 verification attempt; not checked daily",
+    "status": "UNSUPPORTED — not monitored"
+  }
+]
