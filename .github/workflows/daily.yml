@@ -37,6 +37,15 @@ jobs:
         run: python watch.py
       - name: Validate generated RSS
         run: python validate_feed.py docs/feed.xml
+      - name: Send email only for new or materially changed trials
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          ALERT_TO: jbruce@lifesciencedynamics.com
+        run: python email_alert.py
       - name: Preserve durable history
         run: |
           git config user.name 'github-actions[bot]'
