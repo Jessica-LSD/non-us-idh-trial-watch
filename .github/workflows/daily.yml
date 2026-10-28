@@ -38,6 +38,7 @@ jobs:
       - name: Validate generated RSS
         run: python validate_feed.py docs/feed.xml
       - name: Send email only for new or materially changed trials
+        continue-on-error: true
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
