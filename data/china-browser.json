@@ -43,7 +43,7 @@
       "interventions": "HMPL-306片 曾用名:",
       "results": "",
       "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=d05e704668f14c6a8c614415623acc98",
-      "observed_at": "2026-10-27T12:29:06.748Z"
+      "observed_at": "2026-10-28T13:08:40.240Z"
     },
     {
       "source": "China CDE / NMPA",
@@ -88,7 +88,7 @@
       "interventions": "AB-218胶囊",
       "results": "",
       "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=a6004c4e56004e74b7a11bd794e93908",
-      "observed_at": "2026-10-27T12:29:11.445Z"
+      "observed_at": "2026-10-28T13:08:45.039Z"
     },
     {
       "source": "China CDE / NMPA",
@@ -133,7 +133,7 @@
       "interventions": "HMPL-306片 曾用名:",
       "results": "",
       "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=bd45587471424e87b9589f58d127645c",
-      "observed_at": "2026-10-27T12:28:53.081Z"
+      "observed_at": "2026-10-28T13:08:38.225Z"
     },
     {
       "source": "China CDE / NMPA",
@@ -178,7 +178,7 @@
       "interventions": "HMPL-306片 曾用名:",
       "results": "",
       "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=a2ba0331485f44c9ad0a5a9dbfac35ce",
-      "observed_at": "2026-10-27T12:28:50.857Z"
+      "observed_at": "2026-10-28T13:08:35.728Z"
     },
     {
       "source": "China CDE / NMPA",
@@ -223,7 +223,7 @@
       "interventions": "HMPL-306片 曾用名:",
       "results": "",
       "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=29b9f8a0d299402dababf4cd27b1186e",
-      "observed_at": "2026-10-27T12:28:48.638Z"
+      "observed_at": "2026-10-28T13:08:33.867Z"
     },
     {
       "source": "China CDE / NMPA",
@@ -268,7 +268,7 @@
       "interventions": "中文通用名： Safusidenib胶囊",
       "results": "",
       "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=18ba3d6d807149129fb9855f9f7ac6e5",
-      "observed_at": "2026-10-27T12:29:09.568Z"
+      "observed_at": "2026-10-28T13:08:42.753Z"
     },
     {
       "source": "China CDE / NMPA",
@@ -313,11 +313,11 @@
       "interventions": "HMPL-306片 曾用名:",
       "results": "",
       "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=1dd2ca7d79944823a6e2ec93268a49fd",
-      "observed_at": "2026-10-27T12:28:46.683Z"
+      "observed_at": "2026-10-28T13:08:32.035Z"
     }
   ],
-  "last_success": "2026-10-27T12:29:11.445Z",
+  "last_success": "2026-10-28T13:08:45.039Z",
   "status": "verified: local browser discovery + details",
   "detail": "Seven CDE trial records freshly verified through the normal local public browser. All 13 configured case/punctuation aliases and one nonsense negative control checked; every result count and all pages verified. No new matching trials or material field changes. JAB-21822 and unrelated ARDS results rejected. Related registration numbers remain separate trial identities. ChiCTR coverage is not implied.",
-  "last_attempt": "2026-10-27T12:29:11.445Z"
+  "last_attempt": "2026-10-28T13:08:45.039Z"
 }
