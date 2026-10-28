@@ -1,31 +1,31 @@
 {
   "coverage": [
     {
-      "checked_at": "2026-10-27T12:29:11.445Z",
-      "detail": "7 directly captured CDE records. Last successful capture: 2026-10-27T12:29:11.445Z. Seven CDE trial records freshly verified through the normal local public browser. All 13 configured case/punctuation aliases and one nonsense negative control checked; every result count and all pages verified. No new matching trials or material field changes. JAB-21822 and unrelated ARDS results rejected. Related registration numbers remain separate trial identities. ChiCTR coverage is not implied.",
+      "checked_at": "2026-10-28T13:08:45.039Z",
+      "detail": "7 directly captured CDE records. Last successful capture: 2026-10-28T13:08:45.039Z. Seven CDE trial records freshly verified through the normal local public browser. All 13 configured case/punctuation aliases and one nonsense negative control checked; every result count and all pages verified. No new matching trials or material field changes. JAB-21822 and unrelated ARDS results rejected. Related registration numbers remain separate trial identities. ChiCTR coverage is not implied.",
       "source": "China CDE / NMPA",
       "status": "verified: local browser discovery + details"
     },
     {
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "detail": "2 matching trials. POST search with separate aliases and pagination, GET details. Undocumented public-portal API; schema validated each run. Results availability monitored; full document contents not monitored.",
       "source": "EU CTIS",
       "status": "verified: discovery + details"
     },
     {
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "detail": "12 matching studies with explicit non-US sites; API v2, all pages checked",
       "source": "ClinicalTrials.gov",
       "status": "verified: discovery + details"
     },
     {
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "detail": "2/2 known records read. New-trial discovery unsupported. ",
       "source": "Japan jRCT",
       "status": "verified: known records only"
     },
     {
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "detail": "0/1 known records read. New-trial discovery unsupported. HTTP Error 405: Not Allowed",
       "source": "China ChiCTR",
       "status": "DEGRADED / FAILED"
@@ -4845,7 +4845,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:29:06.748Z",
+      "checked_at": "2026-10-28T13:08:40.240Z",
       "completion": "国内：2024-01-06；",
       "countries": [
         "China"
@@ -4890,7 +4890,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:29:11.445Z",
+      "checked_at": "2026-10-28T13:08:45.039Z",
       "completion": "",
       "countries": [
         "China"
@@ -4935,7 +4935,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:28:53.081Z",
+      "checked_at": "2026-10-28T13:08:38.225Z",
       "completion": "国内：登记人暂未填写该信息；",
       "countries": [
         "China"
@@ -4980,7 +4980,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:28:50.857Z",
+      "checked_at": "2026-10-28T13:08:35.728Z",
       "completion": "国内：2025-01-11；",
       "countries": [
         "China"
@@ -5025,7 +5025,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:28:48.638Z",
+      "checked_at": "2026-10-28T13:08:33.867Z",
       "completion": "国内：登记人暂未填写该信息；",
       "countries": [
         "China"
@@ -5070,7 +5070,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:29:09.568Z",
+      "checked_at": "2026-10-28T13:08:42.753Z",
       "completion": "国内：登记人暂未填写该信息； 国际：登记人暂未填写该信息；",
       "countries": [
         "China"
@@ -5115,7 +5115,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:28:46.683Z",
+      "checked_at": "2026-10-28T13:08:32.035Z",
       "completion": "国内：登记人暂未填写该信息；",
       "countries": [
         "China"
@@ -5160,7 +5160,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2026-07-16",
       "countries": [
         "Japan"
@@ -5253,7 +5253,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2022-12-30",
       "countries": [
         "China"
@@ -5359,7 +5359,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2027-02-28",
       "countries": [
         "Japan"
@@ -5472,7 +5472,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2025-02-27",
       "countries": [
         "Spain",
@@ -5595,7 +5595,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2025-01-15",
       "countries": [
         "Spain",
@@ -5742,7 +5742,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2030-12-01",
       "countries": [
         "Australia",
@@ -6014,7 +6014,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2025-03-26",
       "countries": [
         "Australia"
@@ -6201,7 +6201,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2024-08-15",
       "countries": [
         "China"
@@ -6333,7 +6333,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2029-09-30",
       "countries": [
         "China"
@@ -6465,7 +6465,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2025-07-02",
       "countries": [
         "China"
@@ -6552,7 +6552,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2027-12",
       "countries": [
         "China"
@@ -6661,7 +6661,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2029-09",
       "countries": [
         "Switzerland"
@@ -6784,7 +6784,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2025-01-15",
       "countries": [
         "Spain"
@@ -6847,7 +6847,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2025-02-27",
       "countries": [
         "Spain"
@@ -6911,7 +6911,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "",
       "countries": [
         "Japan"
@@ -6949,7 +6949,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-10-27T12:32:31+00:00",
+      "checked_at": "2026-10-28T13:43:58+00:00",
       "completion": "2027年02月28日",
       "countries": [
         "Japan"
@@ -8940,5 +8940,5 @@
       ]
     }
   },
-  "updated_at": "2026-10-27T12:32:31+00:00"
+  "updated_at": "2026-10-28T13:43:58+00:00"
 }
