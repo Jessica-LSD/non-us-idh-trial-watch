@@ -317,7 +317,7 @@
     }
   ],
   "last_success": "2026-10-28T13:08:45.039Z",
-  "status": "verified: local browser discovery + details",
-  "detail": "Seven CDE trial records freshly verified through the normal local public browser. All 13 configured case/punctuation aliases and one nonsense negative control checked; every result count and all pages verified. No new matching trials or material field changes. JAB-21822 and unrelated ARDS results rejected. Related registration numbers remain separate trial identities. ChiCTR coverage is not implied.",
-  "last_attempt": "2026-10-28T13:08:45.039Z"
+  "status": "DEGRADED — browser automation failed; last verified capture retained",
+  "detail": "Locator.fill: Timeout 45000ms exceeded.\nCall log:\n  - waiting for locator(\"#searchfrm input[name=\\\"keywords\\\"]\")\n. Stored records retain their original capture timestamps; not a fresh no-change result.",
+  "last_attempt": "2026-10-29T07:14:33+00:00"
 }
