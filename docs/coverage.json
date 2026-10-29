@@ -1,33 +1,33 @@
 [
   {
     "source": "China CDE / NMPA",
-    "status": "Local browser capture available; hosted automation blocked",
-    "detail": "7 directly captured CDE records. Last successful capture: 2026-10-28T13:08:45.039Z. GitHub-hosted browser checks could not reach the CDE search form. The scheduled local-browser check is the update route. Retained records have their original capture dates; this is not a fresh no-change result.",
-    "checked_at": "2026-10-29T07:14:33+00:00"
+    "status": "verified: local browser discovery + details",
+    "detail": "7 directly captured CDE records. Last successful capture: 2026-10-29T12:50:50.477Z. Seven CDE trial records freshly verified through the normal local public browser. All 13 configured case/punctuation aliases and one nonsense negative control checked; every result count and all pages verified. No new matching trials or material field changes. JAB-21822 and unrelated ARDS results rejected. Related registration numbers remain separate trial identities. ChiCTR coverage is not implied.",
+    "checked_at": "2026-10-29T12:50:50.477Z"
   },
   {
     "source": "EU CTIS",
     "status": "verified: discovery + details",
     "detail": "2 matching trials. POST search with separate aliases and pagination, GET details. Undocumented public-portal API; schema validated each run. Results availability monitored; full document contents not monitored.",
-    "checked_at": "2026-10-29T07:15:27+00:00"
+    "checked_at": "2026-10-29T12:51:13+00:00"
   },
   {
     "source": "ClinicalTrials.gov",
     "status": "verified: discovery + details",
     "detail": "12 matching studies with explicit non-US sites; API v2, all pages checked",
-    "checked_at": "2026-10-29T07:15:27+00:00"
+    "checked_at": "2026-10-29T12:51:13+00:00"
   },
   {
     "source": "Japan jRCT",
     "status": "verified: known records only",
     "detail": "2/2 known records read. New-trial discovery unsupported. ",
-    "checked_at": "2026-10-29T07:15:27+00:00"
+    "checked_at": "2026-10-29T12:51:13+00:00"
   },
   {
     "source": "China ChiCTR",
     "status": "DEGRADED / FAILED",
     "detail": "0/1 known records read. New-trial discovery unsupported. HTTP Error 405: Not Allowed",
-    "checked_at": "2026-10-29T07:15:27+00:00"
+    "checked_at": "2026-10-29T12:51:13+00:00"
   },
   {
     "source": "WHO ICTRP",
