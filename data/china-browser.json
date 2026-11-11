@@ -317,7 +317,7 @@
     }
   ],
   "last_success": "2026-10-30T11:02:20.273Z",
-  "status": "DEGRADED — local in-app browser unavailable; last verified capture retained",
-  "detail": "The scheduled local CDE check could not run because the required in-app browser is unavailable; opening an in-app browser tab reported unavailable. No fresh registry observations or no-change claim. Seven records and their original observed_at timestamps retained; last successful capture remains 2026-10-30T11:02:20.273Z. In-app browser access is required to resume the configured checks. ChiCTR remains unverified.",
-  "last_attempt": "2026-11-10T14:49:25Z"
+  "status": "DEGRADED — browser automation failed; last verified capture retained",
+  "detail": "Locator.fill: Timeout 45000ms exceeded.\nCall log:\n  - waiting for locator(\"#searchfrm input[name=\\\"keywords\\\"]\")\n. Stored records retain their original capture timestamps; not a fresh no-change result.",
+  "last_attempt": "2026-11-11T07:30:43+00:00"
 }
