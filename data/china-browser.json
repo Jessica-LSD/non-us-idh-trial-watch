@@ -317,7 +317,7 @@
     }
   ],
   "last_success": "2026-10-30T11:02:20.273Z",
-  "status": "DEGRADED — browser automation failed; last verified capture retained",
-  "detail": "Locator.fill: Timeout 45000ms exceeded.\nCall log:\n  - waiting for locator(\"#searchfrm input[name=\\\"keywords\\\"]\")\n. Stored records retain their original capture timestamps; not a fresh no-change result.",
-  "last_attempt": "2026-11-14T07:20:36+00:00"
+  "status": "DEGRADED — local browser tools unavailable; last verified capture retained",
+  "detail": "The scheduled local CDE check could not run because approved local in-app browser control tools are unavailable in this session. No fresh registry observations or no-change claim. Existing records and original observed_at timestamps retained; last successful capture remains 2026-10-30T11:02:20.273Z. Local browser access is required to resume the configured checks. ChiCTR remains unverified.",
+  "last_attempt": "2026-11-14T14:08:01Z"
 }
