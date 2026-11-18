@@ -6,8 +6,34 @@
     <description>Safusidenib and HMPL-306 / ranosidenib trial metadata. Coverage is partial; see the linked coverage page.</description>
     <language>en</language>
     <ttl>1440</ttl>
-    <lastBuildDate>Tue, 17 Nov 2026 14:02:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 07:35:32 +0000</lastBuildDate>
     <atom:link href="https://jessica-lsd.github.io/non-us-idh-trial-watch/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Material change: safusidenib — NCT05303519 / CTR20253759</title>
+      <link>https://clinicaltrials.gov/study/NCT05303519</link>
+      <guid isPermaLink="false">urn:sha256:7076cb342ffde3e29eda9e1128a69a950790b2e8b1cc7b83fa1a45995b0c1d2f</guid>
+      <pubDate>Wed, 18 Nov 2026 07:35:32 +0000</pubDate>
+      <description>&lt;p&gt;Material change observed 2026-11-18T07:35:32+00:00. Changes: countries.&lt;/p&gt;&lt;h3&gt;ClinicalTrials.gov — NCT05303519&lt;/h3&gt;&lt;dl&gt;&lt;dt&gt;Title&lt;/dt&gt;&lt;dd&gt;SIGMA (Safusidenib in IDH1 Mutant Glioma Maintenance)&lt;/dd&gt;&lt;dt&gt;Ids&lt;/dt&gt;&lt;dd&gt;[&amp;quot;NCT05303519&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Protocol&lt;/dt&gt;&lt;dd&gt;AB-218-G203&lt;/dd&gt;&lt;dt&gt;Indications&lt;/dt&gt;&lt;dd&gt;[&amp;quot;Glioma&amp;quot;, &amp;quot;Astrocytoma, Grade IV&amp;quot;, &amp;quot;IDH1-mutant Glioma&amp;quot;, &amp;quot;Astrocytoma, IDH-Mutant, Grade 3&amp;quot;, &amp;quot;Astrocytoma, IDH-Mutant, Grade 4&amp;quot;, &amp;quot;Astrocytoma, IDH-Mutant, Grade 2&amp;quot;, &amp;quot;Oligodendroglioma&amp;quot;, &amp;quot;Oligodendroglioma, IDH-Mutant and 1p/19q-Codeleted&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Phase&lt;/dt&gt;&lt;dd&gt;[&amp;quot;PHASE3&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Status&lt;/dt&gt;&lt;dd&gt;RECRUITING&lt;/dd&gt;&lt;dt&gt;Enrollment&lt;/dt&gt;&lt;dd&gt;{&amp;quot;count&amp;quot;: 365, &amp;quot;type&amp;quot;: &amp;quot;ESTIMATED&amp;quot;}&lt;/dd&gt;&lt;dt&gt;Countries&lt;/dt&gt;&lt;dd&gt;[&amp;quot;Australia&amp;quot;, &amp;quot;China&amp;quot;, &amp;quot;France&amp;quot;, &amp;quot;Germany&amp;quot;, &amp;quot;Italy&amp;quot;, &amp;quot;Spain&amp;quot;, &amp;quot;Sweden&amp;quot;, &amp;quot;United Kingdom&amp;quot;, &amp;quot;United States&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Start&lt;/dt&gt;&lt;dd&gt;2023-06-05&lt;/dd&gt;&lt;dt&gt;Primary Completion&lt;/dt&gt;&lt;dd&gt;2028-12-01&lt;/dd&gt;&lt;dt&gt;Completion&lt;/dt&gt;&lt;dd&gt;2030-12-01&lt;/dd&gt;&lt;dt&gt;Registered&lt;/dt&gt;&lt;dd&gt;2022-03-13&lt;/dd&gt;&lt;dt&gt;Posted&lt;/dt&gt;&lt;dd&gt;2022-03-31&lt;/dd&gt;&lt;dt&gt;Updated&lt;/dt&gt;&lt;dd&gt;2026-11-17&lt;/dd&gt;&lt;dt&gt;Checked At&lt;/dt&gt;&lt;dd&gt;2026-11-18T07:35:32+00:00&lt;/dd&gt;&lt;/dl&gt;&lt;p&gt;&lt;a href="https://clinicaltrials.gov/study/NCT05303519"&gt;Registry record&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Changed values:&lt;/p&gt;&lt;pre&gt;{
+  &amp;quot;countries&amp;quot;: {
+    &amp;quot;before&amp;quot;: [
+      &amp;quot;Australia&amp;quot;,
+      &amp;quot;China&amp;quot;,
+      &amp;quot;United States&amp;quot;
+    ],
+    &amp;quot;after&amp;quot;: [
+      &amp;quot;Australia&amp;quot;,
+      &amp;quot;China&amp;quot;,
+      &amp;quot;France&amp;quot;,
+      &amp;quot;Germany&amp;quot;,
+      &amp;quot;Italy&amp;quot;,
+      &amp;quot;Spain&amp;quot;,
+      &amp;quot;Sweden&amp;quot;,
+      &amp;quot;United Kingdom&amp;quot;,
+      &amp;quot;United States&amp;quot;
+    ]
+  }
+}&lt;/pre&gt;&lt;h3&gt;China CDE / NMPA — CTR20253759&lt;/h3&gt;&lt;dl&gt;&lt;dt&gt;Title&lt;/dt&gt;&lt;dd&gt;一项在异柠檬酸脱氢酶 1（IDH1）突变型脑胶质瘤患者中评价safusidenib erbumine 的有效性和安全性的II期、多中心临床研究&lt;/dd&gt;&lt;dt&gt;Ids&lt;/dt&gt;&lt;dd&gt;[&amp;quot;CTR20253759&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Protocol&lt;/dt&gt;&lt;dd&gt;AB-218-G203&lt;/dd&gt;&lt;dt&gt;Indications&lt;/dt&gt;&lt;dd&gt;[&amp;quot;IDH1突变型脑胶质瘤&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Phase&lt;/dt&gt;&lt;dd&gt;[&amp;quot;II期&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Status&lt;/dt&gt;&lt;dd&gt;进行中 招募中&lt;/dd&gt;&lt;dt&gt;Enrollment&lt;/dt&gt;&lt;dd&gt;{&amp;quot;target&amp;quot;: &amp;quot;国内: 40 ； 国际: 125 ；&amp;quot;, &amp;quot;enrolled&amp;quot;: &amp;quot;国内: 30 ； 国际: 91 ；&amp;quot;, &amp;quot;actual&amp;quot;: &amp;quot;国内: 登记人暂未填写该信息； 国际: 登记人暂未填写该信息；&amp;quot;}&lt;/dd&gt;&lt;dt&gt;Countries&lt;/dt&gt;&lt;dd&gt;[&amp;quot;China&amp;quot;]&lt;/dd&gt;&lt;dt&gt;Start&lt;/dt&gt;&lt;dd&gt;国内：2025-11-10； 国际：2023-06-05；&lt;/dd&gt;&lt;dt&gt;Primary Completion&lt;/dt&gt;&lt;dd&gt;Not supplied&lt;/dd&gt;&lt;dt&gt;Completion&lt;/dt&gt;&lt;dd&gt;国内：登记人暂未填写该信息； 国际：登记人暂未填写该信息；&lt;/dd&gt;&lt;dt&gt;Registered&lt;/dt&gt;&lt;dd&gt;Not supplied&lt;/dd&gt;&lt;dt&gt;Posted&lt;/dt&gt;&lt;dd&gt;2025-09-17&lt;/dd&gt;&lt;dt&gt;Updated&lt;/dt&gt;&lt;dd&gt;Not supplied&lt;/dd&gt;&lt;dt&gt;Checked At&lt;/dt&gt;&lt;dd&gt;2026-10-30T11:02:17.237Z&lt;/dd&gt;&lt;/dl&gt;&lt;p&gt;&lt;a href="https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=18ba3d6d807149129fb9855f9f7ac6e5"&gt;Registry record&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Changed values:&lt;/p&gt;&lt;pre&gt;{}&lt;/pre&gt;&lt;p&gt;Coverage is partial. See &lt;a href="https://jessica-lsd.github.io/non-us-idh-trial-watch/"&gt;registry coverage and check times&lt;/a&gt;, including the last successful CDE browser capture and any automation failure. WHO ICTRP automation remains unsupported; jRCT monitoring covers known records only.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Material change: HMPL-306 — NCT07025018 / CTR20252100</title>
       <link>https://clinicaltrials.gov/study/NCT07025018</link>

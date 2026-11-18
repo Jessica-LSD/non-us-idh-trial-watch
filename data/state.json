@@ -1,31 +1,31 @@
 {
   "coverage": [
     {
-      "checked_at": "2026-11-17T14:01:46Z",
-      "detail": "7 directly captured CDE records. Last successful capture: 2026-10-30T11:02:20.273Z. The local browser inventory exposes a Chrome extension with no tabs and no in-app browser. The configured local CDE check could not run. No fresh registry observations or no-change claim. All existing records and original observed_at timestamps retained; last successful capture remains 2026-10-30T11:02:20.273Z. ChiCTR remains unverified.",
+      "checked_at": "2026-11-18T07:34:35+00:00",
+      "detail": "7 directly captured CDE records. Last successful capture: 2026-10-30T11:02:20.273Z. GitHub-hosted browser checks could not reach the CDE search form. The scheduled local-browser check is the update route. Retained records have their original capture dates; this is not a fresh no-change result.",
       "source": "China CDE / NMPA",
-      "status": "DEGRADED — local in-app browser unavailable; last verified capture retained"
+      "status": "Local browser capture available; hosted automation blocked"
     },
     {
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "detail": "2 matching trials. POST search with separate aliases and pagination, GET details. Undocumented public-portal API; schema validated each run. Results availability monitored; full document contents not monitored.",
       "source": "EU CTIS",
       "status": "verified: discovery + details"
     },
     {
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "detail": "12 matching studies with explicit non-US sites; API v2, all pages checked",
       "source": "ClinicalTrials.gov",
       "status": "verified: discovery + details"
     },
     {
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "detail": "2/2 known records read. New-trial discovery unsupported. ",
       "source": "Japan jRCT",
       "status": "verified: known records only"
     },
     {
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "detail": "0/1 known records read. New-trial discovery unsupported. HTTP Error 405: Not Allowed",
       "source": "China ChiCTR",
       "status": "DEGRADED / FAILED"
@@ -4838,6 +4838,631 @@
           "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=29b9f8a0d299402dababf4cd27b1186e"
         }
       ]
+    },
+    {
+      "before": {
+        "China CDE / NMPA:CTR20253759": {
+          "completion": "国内：登记人暂未填写该信息； 国际：登记人暂未填写该信息；",
+          "countries": [
+            "China"
+          ],
+          "eligibility": {
+            "exclusion": "1 排除既往或预期接受抗血管生成药物（如安维汀[贝伐珠单抗]、已知靶向IDH1或IDH2的药物或脑胶质瘤试验药物）治疗的受试者。 2 存在原发部位、多灶性受累部位或显著肿瘤扩展导致的脑干或脊髓受累。 3 经研究者评估，存在可能妨碍参与方案规定研究活动的严重功能或神经认知缺陷（包括未受控制的癫痫发作）。 4 存在软脑膜转移的证据。 5 随机分组前12个月内存在重大心脏疾病史。 6 如果使用皮质类固醇，则必须在随机化（如适用）或研究药物首次给药（若随机分组不适用）前14天内保持稳定剂量或降低剂量。 7 患有其他恶性肿瘤的试验参与者必须接受根治性治疗且无疾病至少达3年。允许接受根治性切除术的非黑素瘤皮肤癌或接受根治性治疗的原位癌受试者入组研究。 8 存在会干扰受试者参与研究或增加参与研究风险的情况。 9 仅第二部分：试验参与者接受过除手术、放疗、同步/辅助替莫唑胺治疗和肿瘤电场治疗以外的任何抗癌治疗。随机化前必须终止肿瘤电场治疗（TTF）。 10 仅第三部分：试验参与者既往接受过除手术（活检、次全切除术或全切除术）以外的任何抗癌 治疗（包括放疗）来治疗脑胶质瘤。",
+            "inclusion": "1 签署ICF 时年龄必须≥18 周岁。 2 必须同意提交足够的肿瘤组织用于回顾性生物标志物和组织学分析。在极少数情况下，经申办者批准后可豁免该要求。 3 具有适当的造血和器官功能。 4 仅第二部分：根据 WHO 2021 分类，经研究者评估，经组织学确诊为IDH突变2级、3级或4级星形细胞瘤。 5 仅第二部分：根据免疫组化（IHC）（仅R132H）、聚合酶链反应（PCR）或下一代测序（NGS）结果确定存在IDH1突变（R132H/C/G/S/L）。必须确认CDKN2A/B状态和以下至少1项：通过荧光原位杂交、阵列比较基因组杂交或NGS证实无1p19q共缺失；通过NGS证实存在ATRX功能缺失突变；或通过IHC证实丧失正常ATRX表达。对于上述所有结果，必须使用经CLIA认证/经CAP认证（或当地同等机构）的临床实验室验证的检测方法。筛选期间必须提供生物标志物状态文件，包括编辑后的分子病理学和NGS报告。 6 仅第二部分：不得出现疾病复发或疾病进展。 7 仅第二部分：试验参与者必须至少完成 80%的计划的放疗（联合或不联合替莫唑胺治疗），并已完成6-12个周期的替莫唑胺辅助治疗，且替莫唑胺给药间隔均不超过60天。随机分配在替莫唑胺末次给药后至少28天但不超过75天进行。 8 仅第三部分：既往接受过至少1次神经胶质瘤手术（活检、次全切除术或全切除术），最近一 次手术发生在入组日期前至少90天但不超过5年；既往未接受过任何其他抗癌 治疗（包括化疗和放疗）；且研究者认为无需立即进行化疗或放疗。 9 仅第三部分：根据当地评估（根据 WHO 2021 年标准），经组织学确诊为3级IDH突变型少突胶质瘤。 10 仅第三部分：入组时，根据RANO 2.0标准评估存在残留或复发性可测量病灶并经BICR确认。 11 仅第三部分：存在 IDH1突变（R132H/C/G/S/L）。还必须确认存在1p19q共缺失。所有结果均必须使用经CLIA认证/经CAP认证（或当地同等机构）的临床实验室所进行 的经验证的检测方法得出。"
+          },
+          "enrollment": {
+            "actual": "国内: 登记人暂未填写该信息； 国际: 登记人暂未填写该信息；",
+            "enrolled": "国内: 30 ； 国际: 91 ；",
+            "target": "国内: 40 ； 国际: 125 ；"
+          },
+          "indications": [
+            "IDH1突变型脑胶质瘤"
+          ],
+          "interventions": "中文通用名： Safusidenib胶囊",
+          "outcomes": {
+            "primary": "序号 指标 评价时间 终点指标选择 1 BICR 根据 RANO 2.0评估的无进展生存期（PFS） 研究期间 有效性指标",
+            "secondary": "序号 指标 评价时间 终点指标选择 1 总生存期（OS） 研究期间 有效性指标 2 由研究者根据 RANO 2.0 评估的无进展生存期（PFS） 研究期间 有效性指标 3 由 BICR 和 研 究 者 根 据 RANO 2.0 评 估 的 疾病控制率（DCR） 研究期间 有效性指标 4 BICR 和研究者根据 RANO 2.0 评估确认客观缓解（完全缓解、部分缓解和轻微缓解）的受试者比例 研究期间 有效性指标 5 由 BICR 和 研 究 者 根 据 RANO 2.0 评 估 的缓解持续时间（DOR） 研究期间 有效性指标 6 由 BICR 和研究者根据 RANO 2.0 评估的至缓解时间（TTR） 研究期间 有效性指标 7 由研究者评估的至下次干预的时间（TTNI） 研究期间 有效性指标 8 癌症治疗功能评估-脑问卷（FACT-Br）评分和癫痫患者加权生活质量问卷（QOLIE-10P）评分 研究期间 有效性指标 9 按美国国家癌症研究所不良事件通用术语标准 （CTCAE）v5.0 分级的不良事件（AE）、按 NCI CTCAE v5.0 分级的实验室检查异常、生命体征、体格检查和心电图 研究期间 安全性指标 10 癫痫发作频率和严重程度，包括癫痫发作类型、癫痫发作相关 AE 和抗癫痫药物的变化 研究期间 有效性指标 11 Safusidenib 浓度和 PK 参数 研究期间 安全性指标"
+          },
+          "phase": [
+            "II期"
+          ],
+          "primary_completion": "",
+          "results": "",
+          "start": "国内：2025-11-10； 国际：2023-06-05；",
+          "status": "进行中 招募中",
+          "title": "一项在异柠檬酸脱氢酶 1（IDH1）突变型脑胶质瘤患者中评价safusidenib erbumine 的有效性和安全性的II期、多中心临床研究"
+        },
+        "ClinicalTrials.gov:NCT05303519": {
+          "completion": "2030-12-01",
+          "countries": [
+            "Australia",
+            "China",
+            "United States"
+          ],
+          "eligibility": {
+            "eligibilityCriteria": "Key Inclusion Criteria for Part 1:\n\n1. Patient must be ≥ 18 years of age at the time of signing the informed consent form (ICF).\n2. Patient must have histologically confirmed recurrent or progressive WHO Grade 2 glioma or Grade 3 glioma with IDH1 R132H or R132C mutation confirmed by immunohistochemistry or molecular genetic testing.\n3. The IDH mutation, and other applicable gene/molecular alterations (see Table 10-2) are determined by a validated assay as performed in Clinical Laboratory Improvement Amendments (CLIA)-certified/College of American Pathologists (CAP)-accredited or locally equivalent clinical laboratories. Prior clinical pathology report fulfilling the diagnosis criteria prior to screening with tumor samples collected is acceptable for patient enrollment in both Part 1 and Part 2.\n4. Patient has received no more than 2 prior therapies for disease recurrence/progression.\n5. Patient has disease recurrence or progression or cannot tolerate the most recent therapy.\n6. Patient must have a measurable lesion(s) as per the RANO-HGG criteria for primarily enhancing lesions or RANO-LGG criteria for primarily non-enhancing lesions. The lesion (s) must be visible on 2 or more axial slices and have perpendicular diameters of at least 10 × 10 mm. The definition of primarily enhancing lesions or primarily non-enhancing lesions is referred to Section 8.3.1.\n\nKey Inclusion Criteria for Part 2 and 3:\n\n1. Must be ≥18 years old at the time of signing the ICF.\n2. Must agree to submit sufficient tumor tissue for retrospective biomarker and histological analyses. This requirement may be waived in rare circumstances with approval by the Sponsor.\n3. Has adequate hematologic and organ function\n\nKey Inclusion Criteria for Part 2:\n\n1. Diagnosis of histologically confirmed IDH1-mutant Grade 2, Grade 3 with high risk features or Grade 4 astrocytoma, per WHO 2021 classification and Investigator Assessment.\n2. Have an IDH1 mutation (R132H/C/G/S/L) based on IHC (R132H only), polymerase chain reaction (PCR), or next-generation sequencing (NGS). CDKN2A/B status and at least 1 of the following must be confirmed: absence of 1p19q co-deletion by fluorescence in situ hybridization, array comparative genomic hybridization, or NGS; presence of an ATRX loss of function mutation by NGS; or loss of normal ATRX expression by IHC. A validated assay performed in a CLIA-certified/CAP-accredited (or local equivalent) clinical laboratory must be used for all of the aforementioned results. Documentation of biomarker status, including redacted molecular pathology and NGS reports, must be provided during Screening.\n3. Must not have experienced tumor recurrence or progression between first day of radiotherapy and randomization by local assessment per RANO 2.0.\n4. Participants must have completed radiation therapy with a minimum of 80% of planned treatment completed (with or without concurrent temozolomide) and between 6 and 12 cycles of adjuvant . Randomization must occur at least 28 days and not more than 75 days after the final dose of temozolomide.\n\nKey Inclusion Criteria for Part 3:\n\n1. Have had at least 1 prior surgery for glioma (biopsy, sub-total resection, or gross total resection), with the most recent surgery having occurred at least 90 days and no longer than 5 years before the date of enrollment, have not had any other prior anticancer therapy, including chemotherapy and radiotherapy, and are not in need of immediate chemotherapy or radiotherapy in the opinion of the Investigator.\n2. Have histologically confirmed Grade 3 IDH-mutant oligodendroglioma according to WHO 2021 criteria per local assessment.\n3. Have residual or recurrent measurable disease per RANO 2.0 and confirmed by BICR, at the time of enrollment.\n4. Have an IDH1 mutation (R132H/C/G/S/L). The presence of 1p19q co-deletion must also be confirmed. All results must be generated using a validated assay performed in a CLIA-certified/CAP-accredited (or local equivalent) clinical laboratory.\n\nKey Exclusion Criteria for Part 1:\n\n1. Prior anti-cancer therapy, within the applicable periods shown below, before the start of the protocol treatment:\n2. Systemic drug therapies: within 3 weeks (lomustine within 6 weeks)\n3. Surgery: within 3 weeks\n4. Radiation therapy: within 12 weeks\n5. Investigational agents: within 5 half-lives for other investigational agents\n6. Patient did receive the prior therapy targeted to IDH1 mutation..\n7. Known hypersensitivity to safusidenib or to any drug with similar chemical structure or to any other excipient present in the pharmaceutical form of safusidenib.\n\nKey Exclusion Criteria for Part 2 and 3:\n\n1. Participants with prior or anticipated treatment with anti-angiogenic agents such as Avastin (bevacizumab), agents known to target IDH1 or IDH2, or investigational agents for glioma are excluded.\n2. Have brainstem or spinal cord involvement either as primary location, site of multifocal involvement, or by significant tumor extension.\n3. Significant functional or neurocognitive deficits, including uncontrolled seizures, that would preclude participation in protocol-defined study activities, as assessed by Investigator.\n4. Evidence of diffuse leptomeningeal disease.\n5. History of significant cardiac disease within 12 months prior to randomization (if applicable) or first dose of study drug (if randomization does not apply).\n6. If taking corticosteroids, must be on a stable or decreasing dose for the 14 days prior to randomization (if applicable) or first dose of study drug (if randomization does not apply).\n7. Participants with other malignancies must have received curative treatment and been disease-free for at least 3 years. Curatively resected skin cancer or curatively treated carcinoma in situ is allowed.\n8. Have a condition that would interfere with, or increase the risk of, study participation.\n\nKey Exclusion Criteria for Part 2 1. Participants may not have received any anticancer treatments other than surgery, radiation, concurrent/adjuvant temozolomide, and tumor-treating fields. Tumor-treating fields must be discontinued prior to randomization.\n\nKey Exclusion Criteria for Part 3:\n\n1\\. Participants may not have received any prior anticancer therapy other than surgery (biopsy, sub-total, or gross total resection) for treatment of glioma, including radiotherapy.",
+            "healthyVolunteers": false,
+            "minimumAge": "18 Years",
+            "sex": "ALL",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "enrollment": {
+            "count": 365,
+            "type": "ESTIMATED"
+          },
+          "indications": [
+            "Glioma",
+            "Astrocytoma, Grade IV",
+            "IDH1-mutant Glioma",
+            "Astrocytoma, IDH-Mutant, Grade 3",
+            "Astrocytoma, IDH-Mutant, Grade 4",
+            "Astrocytoma, IDH-Mutant, Grade 2",
+            "Oligodendroglioma",
+            "Oligodendroglioma, IDH-Mutant and 1p/19q-Codeleted"
+          ],
+          "interventions": [
+            {
+              "armGroupLabels": [
+                "safusidenib 125mg bid (part 1)",
+                "safusidenib 250mg bid (Part 2)",
+                "safusidenib 250mg bid (Part 3)",
+                "safusidenib 250mg bid (part 1)",
+                "safusidenib 375mg bid (part 1)",
+                "safusidenib 500mg bid (part 1)",
+                "safusidenib 500mg qd (part 1)"
+              ],
+              "description": "safusidenib administered continuously as dosed single agent orally on Days 1 to 28 of a 28-day cycle. Subjects may continue treatment with agent safusidenib until disease progression or development of other unacceptable toxicity.",
+              "name": "safusidenib",
+              "otherNames": [
+                "DS-1001b",
+                "AB-218"
+              ],
+              "type": "DRUG"
+            },
+            {
+              "armGroupLabels": [
+                "placebo (Part 2)"
+              ],
+              "description": "Placebo administered continuously as dosed single agent orally on Days 1 to 28 of a 28-day cycle. Subjects may continue treatment with placebo until disease progression or another reason for discontinuation occurs.",
+              "name": "Placebo",
+              "type": "DRUG"
+            }
+          ],
+          "outcomes": {
+            "primaryOutcomes": [
+              {
+                "description": "calculate Percentage and numbers of participants with treatment emergent adverse events (TEAEs) and serious adverse events (SAEs) assessed by CTCAE 5.0",
+                "measure": "Part 1: Incidence of adverse events (AEs) and serious adverse events (SAEs)",
+                "timeFrame": "From participants sign ICF to 30 days after last dose，average 2 years"
+              },
+              {
+                "description": "PFS is defined as the time from randomization to the date of the first documented disease progression assessed by BICR per RANO 2.0 or death (by any cause in the absence of disease progression).",
+                "measure": "Part 2: Progression-free survival (PFS) assessed by Blinded Independent Central Review (BICR) per Response Assessment in Neuro-Oncology (RANO) 2.0",
+                "timeFrame": "From randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "measure": "Part 3 Objective Response Rate (ORR) (Complete Response (CR), Partial Response (PR) and Minor Response (MR)) assessed by Blinded Independent Central Review (BICR) per Response Assessment in Neuro-Oncology (RANO) 2.0",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "description": "Peak Plasma Concentration (Cmax)",
+                "measure": "Part 1: Cmax of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "the time for safusidenib to reach Cmax",
+                "measure": "Part 1: Tmax of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Area under the plasma concentration curve (AUC) from time 0 to 8 hours",
+                "measure": "Part 1: AUC8h of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Area under the plasma concentration curve (AUC) from time 0 to 12 hours",
+                "measure": "Part 1 : AUC12h of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Area under the plasma concentration curve (AUC) from time 0 to 24h hours for 500mg qd cohort",
+                "measure": "Part 1: AUC24h [QD only] of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Lowest plasma concentration reached after AB-218 administration",
+                "measure": "Part 1 : Ctrough of safusidenib",
+                "timeFrame": "on Days 2, 3, 4, 6, 8, 9 of Cycle 1 and Day 1 of Cycles 2, 3, 4, 6 and 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "ORR (defined as the proportion of participants with the best overall confirmed response of Complete Response (CR), Partial Response (PR) or Minor Response (MR)\\[for RANO-HGG/RANO LGG\\] according to the appropriate tumor response criteria) as assessed by the Investigator",
+                "measure": "Part 1: Overall Response Rate (ORR) assessed by the investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "DOR, defined as the time from the first documentation of objective response (CR, PR, or MR) to the date of the first documentation of disease progression per RANO-HGG/RANO-LGG as applicable, or death (by any cause in the absence of progression), for participants with confirmed objective response, as assessed by the Investigator",
+                "measure": "Part 1: Duration of Response (DOR) assessed by the Investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "DCR, defined as the proportion of patients with a best overall response of CR, PR, Stable Disease (SD), or Minor Response (MR) per RANO-HGG/RANO-LGG as applicable, as assessed by the Investigator",
+                "measure": "Part 1: Disease control rate (DCR) assessed by the Investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "PFS, defined as the time from the first dose of study drug to the date of the first documented disease progression per RANO-HGG/RANO-LGG as applicable, or death (by any cause in the absence of disease progression), as assessed by the Investigator",
+                "measure": "Part 1: Progression free survival (PFS) assessed by the Investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "TTR, the time from the first dose of study drug to the first documentation of objective response (CR, PR, or MR) per RANO-HGG/RANO-LGG as applicable, for participants with confirmed objective response, as assessed by the Investigator.",
+                "measure": "Part1: Time to Response (TTR) assessed by the Investigator.",
+                "timeFrame": "From the first dose of study drug until the date of first documented objective response, average 2 years"
+              },
+              {
+                "description": "OS, defined as the time from randomization to death from any cause. Participants without death information at the analysis cutoff date will be censored at last date known to be alive.",
+                "measure": "Part 1: Overall Survival (OS)",
+                "timeFrame": "from the first dose of study drug to date of death, average 7 years"
+              },
+              {
+                "description": "OS, defined as the time from randomization to death from any cause.",
+                "measure": "Part 2: Overall Survival (OS)",
+                "timeFrame": "from randomization to date of death, average 7 years"
+              },
+              {
+                "description": "PFS, defined as the time from randomization to the date of the first documented disease progression per RANO 2.0, or death (by any cause in the absence of disease progression), as assessed by the Investigator.",
+                "measure": "Part 2: PFS assessed by the Investigator.",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "TTNI, defined as the time from randomization to initiation of the first new anticancer therapy, or death due to any cause, whichever comes earlier. Participants who neither initiated new anticancer therapy nor have died at the analysis cutoff date will be censored at the last date known to be alive.",
+                "measure": "Part2: Time to Next Intervention (TTNI) by Investigator assessment",
+                "timeFrame": "From randomization until the date of next treatment, average 2 years"
+              },
+              {
+                "description": "DCR, defined as the proportion of participants with a best overall response of CR, PR, MR, or SD per RANO 2.0, as assessed by the Investigator and BICR",
+                "measure": "Part2: DCR assessed by BICR and by the Investigator",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "ORR, defined as the proportion of participants with the confirmed best overall response of CR, PR, or MR per RANO 2.0, as assessed by BICR and the Investigator.",
+                "measure": "Part2: ORR",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "DOR, the time from the first documentation of objective response (CR, PR, or MR) to the date of the first documentation of disease progression RANO 2.0, or death (by any cause in the absence of progression), for participants with confirmed objective response, as assessed by the BICR and the Investigator.",
+                "measure": "Part2: DOR, assessed by BICR and the Investigator",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "TTR, defined as the time from randomization to the first documentation of objective response (CR, PR, or MR) per RANO 2.0, for participants with confirmed objective response, as assessed by the BICR and the Investigator.",
+                "measure": "Part2: Time to Response (TTR) assessed by BICR and by the Investigator",
+                "timeFrame": "From randomization until the date of first documented objective response, average 2 years"
+              },
+              {
+                "description": "The Functional Assessment of Cancer Therapy-Brain (FACT-Br) questionnaire",
+                "measure": "Part2: Health-related quality of life",
+                "timeFrame": "From the first dose of study drug to treatment discontinuation, average 2 years"
+              },
+              {
+                "description": "AEs graded by NCI CTCAE v5.0, laboratory abnormalities as graded by NCI CTCAE v5.0, vital signs, physical examinations, and ECGs.",
+                "measure": "Part2: Safety and tolerability",
+                "timeFrame": "from the first dose of study drug until 30 days after treatment discontinuation, average 2 years"
+              },
+              {
+                "description": "Defined as seizure frequencies and severity including type of seizure, seizure-related AEs, and changes in anti-epileptic medications.",
+                "measure": "Part2: Seizure Activity",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "Defined as safusidenib concentrations and PK parameters.",
+                "measure": "Part2: Safusidenib PK Profile",
+                "timeFrame": "from the first dose of study drug through 20 weeks"
+              },
+              {
+                "description": "ORR, defined as the proportion of participants with the confirmed best overall response of CR, PR, or MR per RANO 2.0, as assessed by the Investigator.",
+                "measure": "Part 3: ORR, assessed by the Investigator",
+                "timeFrame": "From first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "DOR, the time from the first documentation of objective response (CR, PR, or MR) to the date of the first documentation of disease progression per RANO 2.0, or death (by any cause in the absence of progression), as assessed by the BICR and the Investigator.",
+                "measure": "Part 3: DOR, assessed by BICR and the Investigator",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "TTNI, defined as the time from the first dose of study drug to initiation of the first subsequent anticancer therapy.",
+                "measure": "Part 3: Time to Next Intervention (TTNI)",
+                "timeFrame": "From the first dose of study drug until the date of next treatment, average 18 months"
+              },
+              {
+                "description": "PFS, defined as the time from the first dose of study drug to the date of the first documented disease progression per RANO 2.0, or death (by any cause in the absence of disease progression), as assessed by BICR and the Investigator.",
+                "measure": "Part 3: PFS assessed by BICR and the Investigator.",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "DCR, defined as the proportion of participants with a best overall response of CR, PR, MR, or SD per RANO 2.0, as assessed by the Investigator and BICR",
+                "measure": "Part 3: DCR assessed by BICR and by the Investigator",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "TTR, defined as the time from the first dose of study drug to the first documentation of objective response (CR, PR, or MR) per RANO 2.0, as assessed by the BICR and the Investigator.",
+                "measure": "Part 3: Time to Response (TTR) assessed by BICR and by the Investigator",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "OS, defined as the time from the first dose of study drug to death from any cause.",
+                "measure": "Part 3: Overall Survival (OS)",
+                "timeFrame": "From the first dose of study drug until the date of death, average 7 years"
+              },
+              {
+                "description": "AEs graded by NCI CTCAE v5.0, laboratory abnormalities as graded by NCI CTCAE v5.0, vital signs, physical examinations, and ECGs.",
+                "measure": "Part 3: Safety and tolerability",
+                "timeFrame": "From the first dose of study drug until 30 days after treatment discontinuation, average 18 months"
+              },
+              {
+                "description": "Defined as safusidenib concentrations and PK parameters.\\[Time Frame: from the first dose of study drug through 20 weeks\\]",
+                "measure": "Part 3: Safusidenib PK Profile",
+                "timeFrame": "From the first dose of study drug through 20 weeks"
+              },
+              {
+                "description": "The Functional Assessment of Cancer Therapy-Brain (FACT-Br) and the Quality of Life in Epilepsy (QOLIE-10-P) questionnaires.",
+                "measure": "Part 3: Health-related quality of life",
+                "timeFrame": "From the first dose of study drug to treatment discontinuation, average 18 months"
+              },
+              {
+                "description": "Defined as seizure frequencies and severity including type of seizure, seizure-related AEs, and changes in anti-epileptic medications.",
+                "measure": "Part 3: Seizure Activity",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              }
+            ]
+          },
+          "phase": [
+            "PHASE3"
+          ],
+          "primary_completion": "2028-12-01",
+          "results": false,
+          "start": "2023-06-05",
+          "status": "RECRUITING",
+          "title": "SIGMA (Safusidenib in IDH1 Mutant Glioma Maintenance)"
+        }
+      },
+      "changes": [
+        "countries"
+      ],
+      "guid": "7076cb342ffde3e29eda9e1128a69a950790b2e8b1cc7b83fa1a45995b0c1d2f",
+      "key": "id:NCT05303519",
+      "kind": "Material change",
+      "observed": "2026-11-18T07:35:32+00:00",
+      "records": [
+        {
+          "assets": [
+            "safusidenib"
+          ],
+          "checked_at": "2026-11-18T07:35:32+00:00",
+          "completion": "2030-12-01",
+          "countries": [
+            "Australia",
+            "China",
+            "France",
+            "Germany",
+            "Italy",
+            "Spain",
+            "Sweden",
+            "United Kingdom",
+            "United States"
+          ],
+          "eligibility": {
+            "eligibilityCriteria": "Key Inclusion Criteria for Part 1:\n\n1. Patient must be ≥ 18 years of age at the time of signing the informed consent form (ICF).\n2. Patient must have histologically confirmed recurrent or progressive WHO Grade 2 glioma or Grade 3 glioma with IDH1 R132H or R132C mutation confirmed by immunohistochemistry or molecular genetic testing.\n3. The IDH mutation, and other applicable gene/molecular alterations (see Table 10-2) are determined by a validated assay as performed in Clinical Laboratory Improvement Amendments (CLIA)-certified/College of American Pathologists (CAP)-accredited or locally equivalent clinical laboratories. Prior clinical pathology report fulfilling the diagnosis criteria prior to screening with tumor samples collected is acceptable for patient enrollment in both Part 1 and Part 2.\n4. Patient has received no more than 2 prior therapies for disease recurrence/progression.\n5. Patient has disease recurrence or progression or cannot tolerate the most recent therapy.\n6. Patient must have a measurable lesion(s) as per the RANO-HGG criteria for primarily enhancing lesions or RANO-LGG criteria for primarily non-enhancing lesions. The lesion (s) must be visible on 2 or more axial slices and have perpendicular diameters of at least 10 × 10 mm. The definition of primarily enhancing lesions or primarily non-enhancing lesions is referred to Section 8.3.1.\n\nKey Inclusion Criteria for Part 2 and 3:\n\n1. Must be ≥18 years old at the time of signing the ICF.\n2. Must agree to submit sufficient tumor tissue for retrospective biomarker and histological analyses. This requirement may be waived in rare circumstances with approval by the Sponsor.\n3. Has adequate hematologic and organ function\n\nKey Inclusion Criteria for Part 2:\n\n1. Diagnosis of histologically confirmed IDH1-mutant Grade 2, Grade 3 with high risk features or Grade 4 astrocytoma, per WHO 2021 classification and Investigator Assessment.\n2. Have an IDH1 mutation (R132H/C/G/S/L) based on IHC (R132H only), polymerase chain reaction (PCR), or next-generation sequencing (NGS). CDKN2A/B status and at least 1 of the following must be confirmed: absence of 1p19q co-deletion by fluorescence in situ hybridization, array comparative genomic hybridization, or NGS; presence of an ATRX loss of function mutation by NGS; or loss of normal ATRX expression by IHC. A validated assay performed in a CLIA-certified/CAP-accredited (or local equivalent) clinical laboratory must be used for all of the aforementioned results. Documentation of biomarker status, including redacted molecular pathology and NGS reports, must be provided during Screening.\n3. Must not have experienced tumor recurrence or progression between first day of radiotherapy and randomization by local assessment per RANO 2.0.\n4. Participants must have completed radiation therapy with a minimum of 80% of planned treatment completed (with or without concurrent temozolomide) and between 6 and 12 cycles of adjuvant . Randomization must occur at least 28 days and not more than 75 days after the final dose of temozolomide.\n\nKey Inclusion Criteria for Part 3:\n\n1. Have had at least 1 prior surgery for glioma (biopsy, sub-total resection, or gross total resection), with the most recent surgery having occurred at least 90 days and no longer than 5 years before the date of enrollment, have not had any other prior anticancer therapy, including chemotherapy and radiotherapy, and are not in need of immediate chemotherapy or radiotherapy in the opinion of the Investigator.\n2. Have histologically confirmed Grade 3 IDH-mutant oligodendroglioma according to WHO 2021 criteria per local assessment.\n3. Have residual or recurrent measurable disease per RANO 2.0 and confirmed by BICR, at the time of enrollment.\n4. Have an IDH1 mutation (R132H/C/G/S/L). The presence of 1p19q co-deletion must also be confirmed. All results must be generated using a validated assay performed in a CLIA-certified/CAP-accredited (or local equivalent) clinical laboratory.\n\nKey Exclusion Criteria for Part 1:\n\n1. Prior anti-cancer therapy, within the applicable periods shown below, before the start of the protocol treatment:\n2. Systemic drug therapies: within 3 weeks (lomustine within 6 weeks)\n3. Surgery: within 3 weeks\n4. Radiation therapy: within 12 weeks\n5. Investigational agents: within 5 half-lives for other investigational agents\n6. Patient did receive the prior therapy targeted to IDH1 mutation..\n7. Known hypersensitivity to safusidenib or to any drug with similar chemical structure or to any other excipient present in the pharmaceutical form of safusidenib.\n\nKey Exclusion Criteria for Part 2 and 3:\n\n1. Participants with prior or anticipated treatment with anti-angiogenic agents such as Avastin (bevacizumab), agents known to target IDH1 or IDH2, or investigational agents for glioma are excluded.\n2. Have brainstem or spinal cord involvement either as primary location, site of multifocal involvement, or by significant tumor extension.\n3. Significant functional or neurocognitive deficits, including uncontrolled seizures, that would preclude participation in protocol-defined study activities, as assessed by Investigator.\n4. Evidence of diffuse leptomeningeal disease.\n5. History of significant cardiac disease within 12 months prior to randomization (if applicable) or first dose of study drug (if randomization does not apply).\n6. If taking corticosteroids, must be on a stable or decreasing dose for the 14 days prior to randomization (if applicable) or first dose of study drug (if randomization does not apply).\n7. Participants with other malignancies must have received curative treatment and been disease-free for at least 3 years. Curatively resected skin cancer or curatively treated carcinoma in situ is allowed.\n8. Have a condition that would interfere with, or increase the risk of, study participation.\n\nKey Exclusion Criteria for Part 2 1. Participants may not have received any anticancer treatments other than surgery, radiation, concurrent/adjuvant temozolomide, and tumor-treating fields. Tumor-treating fields must be discontinued prior to randomization.\n\nKey Exclusion Criteria for Part 3:\n\n1\\. Participants may not have received any prior anticancer therapy other than surgery (biopsy, sub-total, or gross total resection) for treatment of glioma, including radiotherapy.",
+            "healthyVolunteers": false,
+            "minimumAge": "18 Years",
+            "sex": "ALL",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "enrollment": {
+            "count": 365,
+            "type": "ESTIMATED"
+          },
+          "id": "NCT05303519",
+          "ids": [
+            "NCT05303519"
+          ],
+          "indications": [
+            "Glioma",
+            "Astrocytoma, Grade IV",
+            "IDH1-mutant Glioma",
+            "Astrocytoma, IDH-Mutant, Grade 3",
+            "Astrocytoma, IDH-Mutant, Grade 4",
+            "Astrocytoma, IDH-Mutant, Grade 2",
+            "Oligodendroglioma",
+            "Oligodendroglioma, IDH-Mutant and 1p/19q-Codeleted"
+          ],
+          "interventions": [
+            {
+              "armGroupLabels": [
+                "safusidenib 125mg bid (part 1)",
+                "safusidenib 250mg bid (Part 2)",
+                "safusidenib 250mg bid (Part 3)",
+                "safusidenib 250mg bid (part 1)",
+                "safusidenib 375mg bid (part 1)",
+                "safusidenib 500mg bid (part 1)",
+                "safusidenib 500mg qd (part 1)"
+              ],
+              "description": "safusidenib administered continuously as dosed single agent orally on Days 1 to 28 of a 28-day cycle. Subjects may continue treatment with agent safusidenib until disease progression or development of other unacceptable toxicity.",
+              "name": "safusidenib",
+              "otherNames": [
+                "DS-1001b",
+                "AB-218"
+              ],
+              "type": "DRUG"
+            },
+            {
+              "armGroupLabels": [
+                "placebo (Part 2)"
+              ],
+              "description": "Placebo administered continuously as dosed single agent orally on Days 1 to 28 of a 28-day cycle. Subjects may continue treatment with placebo until disease progression or another reason for discontinuation occurs.",
+              "name": "Placebo",
+              "type": "DRUG"
+            }
+          ],
+          "outcomes": {
+            "primaryOutcomes": [
+              {
+                "description": "calculate Percentage and numbers of participants with treatment emergent adverse events (TEAEs) and serious adverse events (SAEs) assessed by CTCAE 5.0",
+                "measure": "Part 1: Incidence of adverse events (AEs) and serious adverse events (SAEs)",
+                "timeFrame": "From participants sign ICF to 30 days after last dose，average 2 years"
+              },
+              {
+                "description": "PFS is defined as the time from randomization to the date of the first documented disease progression assessed by BICR per RANO 2.0 or death (by any cause in the absence of disease progression).",
+                "measure": "Part 2: Progression-free survival (PFS) assessed by Blinded Independent Central Review (BICR) per Response Assessment in Neuro-Oncology (RANO) 2.0",
+                "timeFrame": "From randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "measure": "Part 3 Objective Response Rate (ORR) (Complete Response (CR), Partial Response (PR) and Minor Response (MR)) assessed by Blinded Independent Central Review (BICR) per Response Assessment in Neuro-Oncology (RANO) 2.0",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "description": "Peak Plasma Concentration (Cmax)",
+                "measure": "Part 1: Cmax of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "the time for safusidenib to reach Cmax",
+                "measure": "Part 1: Tmax of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Area under the plasma concentration curve (AUC) from time 0 to 8 hours",
+                "measure": "Part 1: AUC8h of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Area under the plasma concentration curve (AUC) from time 0 to 12 hours",
+                "measure": "Part 1 : AUC12h of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Area under the plasma concentration curve (AUC) from time 0 to 24h hours for 500mg qd cohort",
+                "measure": "Part 1: AUC24h [QD only] of safusidenib",
+                "timeFrame": "on Cycle 1 Day 1 and Day 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "Lowest plasma concentration reached after AB-218 administration",
+                "measure": "Part 1 : Ctrough of safusidenib",
+                "timeFrame": "on Days 2, 3, 4, 6, 8, 9 of Cycle 1 and Day 1 of Cycles 2, 3, 4, 6 and 8 (every cycle is 28 days)"
+              },
+              {
+                "description": "ORR (defined as the proportion of participants with the best overall confirmed response of Complete Response (CR), Partial Response (PR) or Minor Response (MR)\\[for RANO-HGG/RANO LGG\\] according to the appropriate tumor response criteria) as assessed by the Investigator",
+                "measure": "Part 1: Overall Response Rate (ORR) assessed by the investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "DOR, defined as the time from the first documentation of objective response (CR, PR, or MR) to the date of the first documentation of disease progression per RANO-HGG/RANO-LGG as applicable, or death (by any cause in the absence of progression), for participants with confirmed objective response, as assessed by the Investigator",
+                "measure": "Part 1: Duration of Response (DOR) assessed by the Investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "DCR, defined as the proportion of patients with a best overall response of CR, PR, Stable Disease (SD), or Minor Response (MR) per RANO-HGG/RANO-LGG as applicable, as assessed by the Investigator",
+                "measure": "Part 1: Disease control rate (DCR) assessed by the Investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "PFS, defined as the time from the first dose of study drug to the date of the first documented disease progression per RANO-HGG/RANO-LGG as applicable, or death (by any cause in the absence of disease progression), as assessed by the Investigator",
+                "measure": "Part 1: Progression free survival (PFS) assessed by the Investigator",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "TTR, the time from the first dose of study drug to the first documentation of objective response (CR, PR, or MR) per RANO-HGG/RANO-LGG as applicable, for participants with confirmed objective response, as assessed by the Investigator.",
+                "measure": "Part1: Time to Response (TTR) assessed by the Investigator.",
+                "timeFrame": "From the first dose of study drug until the date of first documented objective response, average 2 years"
+              },
+              {
+                "description": "OS, defined as the time from randomization to death from any cause. Participants without death information at the analysis cutoff date will be censored at last date known to be alive.",
+                "measure": "Part 1: Overall Survival (OS)",
+                "timeFrame": "from the first dose of study drug to date of death, average 7 years"
+              },
+              {
+                "description": "OS, defined as the time from randomization to death from any cause.",
+                "measure": "Part 2: Overall Survival (OS)",
+                "timeFrame": "from randomization to date of death, average 7 years"
+              },
+              {
+                "description": "PFS, defined as the time from randomization to the date of the first documented disease progression per RANO 2.0, or death (by any cause in the absence of disease progression), as assessed by the Investigator.",
+                "measure": "Part 2: PFS assessed by the Investigator.",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "TTNI, defined as the time from randomization to initiation of the first new anticancer therapy, or death due to any cause, whichever comes earlier. Participants who neither initiated new anticancer therapy nor have died at the analysis cutoff date will be censored at the last date known to be alive.",
+                "measure": "Part2: Time to Next Intervention (TTNI) by Investigator assessment",
+                "timeFrame": "From randomization until the date of next treatment, average 2 years"
+              },
+              {
+                "description": "DCR, defined as the proportion of participants with a best overall response of CR, PR, MR, or SD per RANO 2.0, as assessed by the Investigator and BICR",
+                "measure": "Part2: DCR assessed by BICR and by the Investigator",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "ORR, defined as the proportion of participants with the confirmed best overall response of CR, PR, or MR per RANO 2.0, as assessed by BICR and the Investigator.",
+                "measure": "Part2: ORR",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "DOR, the time from the first documentation of objective response (CR, PR, or MR) to the date of the first documentation of disease progression RANO 2.0, or death (by any cause in the absence of progression), for participants with confirmed objective response, as assessed by the BICR and the Investigator.",
+                "measure": "Part2: DOR, assessed by BICR and the Investigator",
+                "timeFrame": "from randomization until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "TTR, defined as the time from randomization to the first documentation of objective response (CR, PR, or MR) per RANO 2.0, for participants with confirmed objective response, as assessed by the BICR and the Investigator.",
+                "measure": "Part2: Time to Response (TTR) assessed by BICR and by the Investigator",
+                "timeFrame": "From randomization until the date of first documented objective response, average 2 years"
+              },
+              {
+                "description": "The Functional Assessment of Cancer Therapy-Brain (FACT-Br) questionnaire",
+                "measure": "Part2: Health-related quality of life",
+                "timeFrame": "From the first dose of study drug to treatment discontinuation, average 2 years"
+              },
+              {
+                "description": "AEs graded by NCI CTCAE v5.0, laboratory abnormalities as graded by NCI CTCAE v5.0, vital signs, physical examinations, and ECGs.",
+                "measure": "Part2: Safety and tolerability",
+                "timeFrame": "from the first dose of study drug until 30 days after treatment discontinuation, average 2 years"
+              },
+              {
+                "description": "Defined as seizure frequencies and severity including type of seizure, seizure-related AEs, and changes in anti-epileptic medications.",
+                "measure": "Part2: Seizure Activity",
+                "timeFrame": "from the first dose of study drug until the date of first documented disease progression, average 2 years"
+              },
+              {
+                "description": "Defined as safusidenib concentrations and PK parameters.",
+                "measure": "Part2: Safusidenib PK Profile",
+                "timeFrame": "from the first dose of study drug through 20 weeks"
+              },
+              {
+                "description": "ORR, defined as the proportion of participants with the confirmed best overall response of CR, PR, or MR per RANO 2.0, as assessed by the Investigator.",
+                "measure": "Part 3: ORR, assessed by the Investigator",
+                "timeFrame": "From first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "DOR, the time from the first documentation of objective response (CR, PR, or MR) to the date of the first documentation of disease progression per RANO 2.0, or death (by any cause in the absence of progression), as assessed by the BICR and the Investigator.",
+                "measure": "Part 3: DOR, assessed by BICR and the Investigator",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "TTNI, defined as the time from the first dose of study drug to initiation of the first subsequent anticancer therapy.",
+                "measure": "Part 3: Time to Next Intervention (TTNI)",
+                "timeFrame": "From the first dose of study drug until the date of next treatment, average 18 months"
+              },
+              {
+                "description": "PFS, defined as the time from the first dose of study drug to the date of the first documented disease progression per RANO 2.0, or death (by any cause in the absence of disease progression), as assessed by BICR and the Investigator.",
+                "measure": "Part 3: PFS assessed by BICR and the Investigator.",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "DCR, defined as the proportion of participants with a best overall response of CR, PR, MR, or SD per RANO 2.0, as assessed by the Investigator and BICR",
+                "measure": "Part 3: DCR assessed by BICR and by the Investigator",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "TTR, defined as the time from the first dose of study drug to the first documentation of objective response (CR, PR, or MR) per RANO 2.0, as assessed by the BICR and the Investigator.",
+                "measure": "Part 3: Time to Response (TTR) assessed by BICR and by the Investigator",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              },
+              {
+                "description": "OS, defined as the time from the first dose of study drug to death from any cause.",
+                "measure": "Part 3: Overall Survival (OS)",
+                "timeFrame": "From the first dose of study drug until the date of death, average 7 years"
+              },
+              {
+                "description": "AEs graded by NCI CTCAE v5.0, laboratory abnormalities as graded by NCI CTCAE v5.0, vital signs, physical examinations, and ECGs.",
+                "measure": "Part 3: Safety and tolerability",
+                "timeFrame": "From the first dose of study drug until 30 days after treatment discontinuation, average 18 months"
+              },
+              {
+                "description": "Defined as safusidenib concentrations and PK parameters.\\[Time Frame: from the first dose of study drug through 20 weeks\\]",
+                "measure": "Part 3: Safusidenib PK Profile",
+                "timeFrame": "From the first dose of study drug through 20 weeks"
+              },
+              {
+                "description": "The Functional Assessment of Cancer Therapy-Brain (FACT-Br) and the Quality of Life in Epilepsy (QOLIE-10-P) questionnaires.",
+                "measure": "Part 3: Health-related quality of life",
+                "timeFrame": "From the first dose of study drug to treatment discontinuation, average 18 months"
+              },
+              {
+                "description": "Defined as seizure frequencies and severity including type of seizure, seizure-related AEs, and changes in anti-epileptic medications.",
+                "measure": "Part 3: Seizure Activity",
+                "timeFrame": "From the first dose of study drug until the date of first documented disease progression, average 18 months"
+              }
+            ]
+          },
+          "phase": [
+            "PHASE3"
+          ],
+          "posted": "2022-03-31",
+          "primary_completion": "2028-12-01",
+          "protocol": "AB-218-G203",
+          "registered": "2022-03-13",
+          "results": false,
+          "source": "ClinicalTrials.gov",
+          "start": "2023-06-05",
+          "status": "RECRUITING",
+          "title": "SIGMA (Safusidenib in IDH1 Mutant Glioma Maintenance)",
+          "updated": "2026-11-17",
+          "url": "https://clinicaltrials.gov/study/NCT05303519"
+        },
+        {
+          "assets": [
+            "safusidenib"
+          ],
+          "checked_at": "2026-10-30T11:02:17.237Z",
+          "completion": "国内：登记人暂未填写该信息； 国际：登记人暂未填写该信息；",
+          "countries": [
+            "China"
+          ],
+          "eligibility": {
+            "exclusion": "1 排除既往或预期接受抗血管生成药物（如安维汀[贝伐珠单抗]、已知靶向IDH1或IDH2的药物或脑胶质瘤试验药物）治疗的受试者。 2 存在原发部位、多灶性受累部位或显著肿瘤扩展导致的脑干或脊髓受累。 3 经研究者评估，存在可能妨碍参与方案规定研究活动的严重功能或神经认知缺陷（包括未受控制的癫痫发作）。 4 存在软脑膜转移的证据。 5 随机分组前12个月内存在重大心脏疾病史。 6 如果使用皮质类固醇，则必须在随机化（如适用）或研究药物首次给药（若随机分组不适用）前14天内保持稳定剂量或降低剂量。 7 患有其他恶性肿瘤的试验参与者必须接受根治性治疗且无疾病至少达3年。允许接受根治性切除术的非黑素瘤皮肤癌或接受根治性治疗的原位癌受试者入组研究。 8 存在会干扰受试者参与研究或增加参与研究风险的情况。 9 仅第二部分：试验参与者接受过除手术、放疗、同步/辅助替莫唑胺治疗和肿瘤电场治疗以外的任何抗癌治疗。随机化前必须终止肿瘤电场治疗（TTF）。 10 仅第三部分：试验参与者既往接受过除手术（活检、次全切除术或全切除术）以外的任何抗癌 治疗（包括放疗）来治疗脑胶质瘤。",
+            "inclusion": "1 签署ICF 时年龄必须≥18 周岁。 2 必须同意提交足够的肿瘤组织用于回顾性生物标志物和组织学分析。在极少数情况下，经申办者批准后可豁免该要求。 3 具有适当的造血和器官功能。 4 仅第二部分：根据 WHO 2021 分类，经研究者评估，经组织学确诊为IDH突变2级、3级或4级星形细胞瘤。 5 仅第二部分：根据免疫组化（IHC）（仅R132H）、聚合酶链反应（PCR）或下一代测序（NGS）结果确定存在IDH1突变（R132H/C/G/S/L）。必须确认CDKN2A/B状态和以下至少1项：通过荧光原位杂交、阵列比较基因组杂交或NGS证实无1p19q共缺失；通过NGS证实存在ATRX功能缺失突变；或通过IHC证实丧失正常ATRX表达。对于上述所有结果，必须使用经CLIA认证/经CAP认证（或当地同等机构）的临床实验室验证的检测方法。筛选期间必须提供生物标志物状态文件，包括编辑后的分子病理学和NGS报告。 6 仅第二部分：不得出现疾病复发或疾病进展。 7 仅第二部分：试验参与者必须至少完成 80%的计划的放疗（联合或不联合替莫唑胺治疗），并已完成6-12个周期的替莫唑胺辅助治疗，且替莫唑胺给药间隔均不超过60天。随机分配在替莫唑胺末次给药后至少28天但不超过75天进行。 8 仅第三部分：既往接受过至少1次神经胶质瘤手术（活检、次全切除术或全切除术），最近一 次手术发生在入组日期前至少90天但不超过5年；既往未接受过任何其他抗癌 治疗（包括化疗和放疗）；且研究者认为无需立即进行化疗或放疗。 9 仅第三部分：根据当地评估（根据 WHO 2021 年标准），经组织学确诊为3级IDH突变型少突胶质瘤。 10 仅第三部分：入组时，根据RANO 2.0标准评估存在残留或复发性可测量病灶并经BICR确认。 11 仅第三部分：存在 IDH1突变（R132H/C/G/S/L）。还必须确认存在1p19q共缺失。所有结果均必须使用经CLIA认证/经CAP认证（或当地同等机构）的临床实验室所进行 的经验证的检测方法得出。"
+          },
+          "enrollment": {
+            "actual": "国内: 登记人暂未填写该信息； 国际: 登记人暂未填写该信息；",
+            "enrolled": "国内: 30 ； 国际: 91 ；",
+            "target": "国内: 40 ； 国际: 125 ；"
+          },
+          "id": "CTR20253759",
+          "ids": [
+            "CTR20253759"
+          ],
+          "indications": [
+            "IDH1突变型脑胶质瘤"
+          ],
+          "interventions": "中文通用名： Safusidenib胶囊",
+          "outcomes": {
+            "primary": "序号 指标 评价时间 终点指标选择 1 BICR 根据 RANO 2.0评估的无进展生存期（PFS） 研究期间 有效性指标",
+            "secondary": "序号 指标 评价时间 终点指标选择 1 总生存期（OS） 研究期间 有效性指标 2 由研究者根据 RANO 2.0 评估的无进展生存期（PFS） 研究期间 有效性指标 3 由 BICR 和 研 究 者 根 据 RANO 2.0 评 估 的 疾病控制率（DCR） 研究期间 有效性指标 4 BICR 和研究者根据 RANO 2.0 评估确认客观缓解（完全缓解、部分缓解和轻微缓解）的受试者比例 研究期间 有效性指标 5 由 BICR 和 研 究 者 根 据 RANO 2.0 评 估 的缓解持续时间（DOR） 研究期间 有效性指标 6 由 BICR 和研究者根据 RANO 2.0 评估的至缓解时间（TTR） 研究期间 有效性指标 7 由研究者评估的至下次干预的时间（TTNI） 研究期间 有效性指标 8 癌症治疗功能评估-脑问卷（FACT-Br）评分和癫痫患者加权生活质量问卷（QOLIE-10P）评分 研究期间 有效性指标 9 按美国国家癌症研究所不良事件通用术语标准 （CTCAE）v5.0 分级的不良事件（AE）、按 NCI CTCAE v5.0 分级的实验室检查异常、生命体征、体格检查和心电图 研究期间 安全性指标 10 癫痫发作频率和严重程度，包括癫痫发作类型、癫痫发作相关 AE 和抗癫痫药物的变化 研究期间 有效性指标 11 Safusidenib 浓度和 PK 参数 研究期间 安全性指标"
+          },
+          "phase": [
+            "II期"
+          ],
+          "posted": "2025-09-17",
+          "primary_completion": "",
+          "protocol": "AB-218-G203",
+          "registered": "",
+          "results": "",
+          "source": "China CDE / NMPA",
+          "start": "国内：2025-11-10； 国际：2023-06-05；",
+          "status": "进行中 招募中",
+          "title": "一项在异柠檬酸脱氢酶 1（IDH1）突变型脑胶质瘤患者中评价safusidenib erbumine 的有效性和安全性的II期、多中心临床研究",
+          "updated": "",
+          "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml?id=18ba3d6d807149129fb9855f9f7ac6e5"
+        }
+      ]
     }
   ],
   "records": {
@@ -5160,7 +5785,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2026-07-16",
       "countries": [
         "Japan"
@@ -5253,7 +5878,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2022-12-30",
       "countries": [
         "China"
@@ -5359,7 +5984,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2027-02-28",
       "countries": [
         "Japan"
@@ -5472,7 +6097,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2025-02-27",
       "countries": [
         "Spain",
@@ -5595,7 +6220,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2025-01-15",
       "countries": [
         "Spain",
@@ -5742,11 +6367,17 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2030-12-01",
       "countries": [
         "Australia",
         "China",
+        "France",
+        "Germany",
+        "Italy",
+        "Spain",
+        "Sweden",
+        "United Kingdom",
         "United States"
       ],
       "eligibility": {
@@ -6007,14 +6638,14 @@
       "start": "2023-06-05",
       "status": "RECRUITING",
       "title": "SIGMA (Safusidenib in IDH1 Mutant Glioma Maintenance)",
-      "updated": "2026-10-19",
+      "updated": "2026-11-17",
       "url": "https://clinicaltrials.gov/study/NCT05303519"
     },
     "ClinicalTrials.gov:NCT05577416": {
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2025-03-26",
       "countries": [
         "Australia"
@@ -6201,7 +6832,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2024-08-15",
       "countries": [
         "China"
@@ -6333,7 +6964,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2029-09-30",
       "countries": [
         "China"
@@ -6465,7 +7096,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2025-07-02",
       "countries": [
         "China"
@@ -6552,7 +7183,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2027-12",
       "countries": [
         "China"
@@ -6661,7 +7292,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2029-09",
       "countries": [
         "Switzerland"
@@ -6784,7 +7415,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2025-01-15",
       "countries": [
         "Spain"
@@ -6847,7 +7478,7 @@
       "assets": [
         "HMPL-306"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2025-02-27",
       "countries": [
         "Spain"
@@ -6911,7 +7542,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "",
       "countries": [
         "Japan"
@@ -6949,7 +7580,7 @@
       "assets": [
         "safusidenib"
       ],
-      "checked_at": "2026-11-17T14:02:07+00:00",
+      "checked_at": "2026-11-18T07:35:32+00:00",
       "completion": "2027年02月28日",
       "countries": [
         "Japan"
@@ -7810,6 +8441,12 @@
           "countries": [
             "Australia",
             "China",
+            "France",
+            "Germany",
+            "Italy",
+            "Spain",
+            "Sweden",
+            "United Kingdom",
             "United States"
           ],
           "eligibility": {
@@ -8064,7 +8701,7 @@
           "title": "SIGMA (Safusidenib in IDH1 Mutant Glioma Maintenance)"
         }
       },
-      "sequence": 2,
+      "sequence": 3,
       "tokens": [
         "id:CTR20253759",
         "id:NCT05303519",
@@ -8940,5 +9577,5 @@
       ]
     }
   },
-  "updated_at": "2026-11-17T14:02:07+00:00"
+  "updated_at": "2026-11-18T07:35:32+00:00"
 }
