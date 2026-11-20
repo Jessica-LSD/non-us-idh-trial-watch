@@ -317,7 +317,7 @@
     }
   ],
   "last_success": "2026-10-30T11:02:20.273Z",
-  "status": "DEGRADED — browser automation failed; last verified capture retained",
-  "detail": "Locator.fill: Timeout 45000ms exceeded.\nCall log:\n  - waiting for locator(\"#searchfrm input[name=\\\"keywords\\\"]\")\n. Stored records retain their original capture timestamps; not a fresh no-change result.",
-  "last_attempt": "2026-11-20T07:35:14+00:00"
+  "status": "DEGRADED — local browser access denied; last verified capture retained",
+  "detail": "The approved local browser tool returned GetCursorPos failed: Access is denied. (0x80070005) for both inventory and opening the in-app CDE browser. The registry UI could not be inspected. No fresh observations or no-change claim. All records and original observed_at timestamps retained; last successful capture remains 2026-10-30T11:02:20.273Z. ChiCTR remains unverified.",
+  "last_attempt": "2026-11-20T14:47:16Z"
 }
